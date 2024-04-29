@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lawyers/Accountants</title>
+    <!-- google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap 5.3.2 -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/bootstrap/css/bootstrap.rtl.min.css"
+    />
+    <!-- fontawesome 6.5.1 -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/fontawesome/css/all.min.css"
+    />
+    <!-- main cc -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler me-3 bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand me-auto" href="index.html">
+            <img src="../assets/images/Logo.png" alt="LoremLogo" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item text-reset">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >الصفحة الرئيسية</a
+                >
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="news.html">الأخبار</a>
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="laws.html">القوانين</a>
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="viewAllJobs.html">الوظائف</a>
+              </li>
+              <li class="nav-item text-reset dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  العمل الحر
+                </a>
+                <ul class="dropdown-menu linkMenu py-0">
+                  <li>
+                    <a class="dropdown-item" href="cases.html"
+                      >الحالات الخاصة بك</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="addCase.html">إضافة حالة</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="freelance.html"
+                      >البحث عن المستقلين</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown position-relative">
+              <a
+                class="text-decoration-none text-reset dropdown-toggle d-flex align-items-center position-relative"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><i class="fa-regular fa-bell fs-3 me-2"></i>
+                <span
+                  class="badge rounded-pill text-bg-warning position-absolute top-50 translate-middle border border-1 bc-white"
+                  >0</span
+                >
+                <img
+                  src="../assets/images/loremProfile-1.png"
+                  width="40"
+                  class="rounded-circle"
+                  alt=""
+                />
+                <div>
+                  <span class="d-none d-md-block ps-2">محمد الحسيني</span>
+                  <span class="d-none d-md-block ps-2"
+                    >mo_elhosiny@mail.com</span
+                  >
+                </div>
+              </a>
+              <ul
+                class="dropdown-menu profileMenu py-0 position-absolute end-0"
+              >
+                <li class="exclude">
+                  <a href="./profile.html" class="dropdown-item px-1">
+                    <img
+                      src="../assets/images/loremProfile-1.png"
+                      width="40"
+                      class="rounded-circle"
+                      alt=""
+                    />
+                    <div class="d-inline-block">
+                      <span class="ps-2 d-block">محمد الحسيني</span>
+                      <span class="ps-2 d-block">mo_elhosiny@mail.com</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./createCV.html"
+                    >انشاء سيرة ذاتية</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./pricePlan.html"
+                    >خطط التسعير</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./helpCenter.html"
+                    >مركز المساعدة</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./favourites.html">المفضلات</a>
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./accountSettings.html"
+                    >إعدادات الحساب</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./index.html">تسجيل الخروج</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="freelancerHero" class="py-5">
+        <div class="container py-5">
+          <div class="py-5"></div>
+        </div>
+      </section>
+      <section id="freelancerInfo2" class="pb-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="card bc-blue b-radius b-shadow">
+                <h4 class="overflow-auto mb-0 p-3">صاحب الحالة</h4>
+                <hr class="border bc-blue border-3 opacity-100 my-0" />
+                <div class="card-body p-0">
+                  <div class="card border-0">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-lg-2 col-md-4 col-5 p-3 text-center">
+                        <img
+                          src="../assets/images/profileHero.png"
+                          class="img-fluid"
+                          width="120px"
+                          alt="Profile"
+                        />
+                      </div>
+                      <div class="col-lg-10 col-md-8 col-7">
+                        <div class="card-body">
+                          <h5 class="card-title mb-2">زياد عبدالعظيم علي</h5>
+                          <h6 class="card-title mb-2">الجيزة ,6 أكتوبر</h6>
+                          <p class="card-text mb-1">محكمة الجيزة</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="caseInfo" class="pb-4">
+        <div class="container">
+          <div class="card bc-blue b-shadow b-radius">
+            <h5 class="p-3 mb-0">تفاصيل الحاله</h5>
+            <hr class="border bc-blue border-3 opacity-100 my-0" />
+            <div class="container p-4">
+              <div class="row">
+                <div class="col-md-6 order-md-1 order-2 mb-3">
+                  <h4>محامي قانوني</h4>
+                  <p class="c-ti mb-0">
+                    <i class="fa-regular fa-clock me-2"></i> أضيف منذ يوم
+                  </p>
+                  <p class="c-ti mb-0">
+                    <i class="fa-solid fa-list-ol"></i> 12/5/24024
+                  </p>
+                </div>
+                <div class="col-md-6 order-md-2 order-1">
+                  <div
+                    class="input-group align-items-center justify-content-end"
+                  >
+                    <a href="#" class="c-ti me-2">الابلاغ عن مشكلة</a>
+                    <button class="btn text-danger b-sradius rounded-0 bc-st">
+                      <i class="fa-regular fa-trash-can"></i> حذف
+                    </button>
+                    <button
+                      class="btn bg-success b-eradius rounded-0 bc-success c-white"
+                    >
+                      <i class="fa-regular fa-trash-can"></i> نشط
+                    </button>
+                  </div>
+                </div>
+                <div class="col-12 order-3">
+                  <p class="mb-0">
+                    هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن
+                    الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات
+                    العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم
+                    ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة
+                    أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع مولّدات نصوص
+                    لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم
+                    إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا
+                    باستخدام كلمات من قاموس يحوي على أكثر من 200 كلمة لا تينية،
+                    مضاف إليها مجموعة من الجمل النموذجية، لتكوين نص لوريم إيبسوم
+                    ذو شكل منطقي قريب إلى النص الحقيقي. وبالتالي يكون النص
+                    الناتح خالي من التكرار، أو أي كلمات أو عبارات غير لائقة أو
+                    ما شابه. وهذا ما يجعله أول مولّد نص لوريم إيبسوم حقيقي على
+                    الإنترنت.هنالك العديد من الأنواع المتوفرة لنصوص لوريم
+                    إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض
+                    النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم
+                    نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات
+                    أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل
+                    جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار
+                    مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة،
+                    يقوم مولّدنا هذا باستخدام كلمات من قاموس يحوي على أكثر من
+                    200 كلمة لا تينية، مضاف إليها مجموعة من الجمل النموذجية،
+                    لتكوين نص لوريم إيبسوم ذو شكل منطقي قريب إلى النص الحقيقي.
+                    وبالتالي يكون النص الناتح خالي من التكرار، أو أي كلمات أو
+                    عبارات غير لائقة أو ما شابه. وهذا ما يجعله أول مولّد نص
+                    لوريم إيبسوم حقيقي على الإنترنت. هنالك العديد من الأنواع
+                    المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل
+                    ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن
+                    كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً
+                    أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في
+                    هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على
+                    الإنترنت على إعادة تكرار مقاطع من نص لوريم إيبسوم نفسه عدة
+                    مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام كلمات من
+                    قاموس يحوي على أكثر من 200 كلمة لا تينية، مضاف إليها مجموعة
+                    من الجمل النموذجية، لتكوين نص لوريم إيبسوم ذو شكل منطقي قريب
+                    إلى النص الحقيقي. وبالتالي يكون النص الناتح خالي من التكرار،
+                    أو أي كلمات أو عبارات غير لائقة أو ما شابه. وهذا ما يجعله
+                    أول مولّد نص لوريم إيبسوم حقيقي على الإنترنت.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="requiredSkills" class="pb-4">
+        <div class="container">
+          <div class="card bc-blue b-shadow b-radius">
+            <h5 class="p-4 mb-0">المهارات المطلوبة</h5>
+            <hr class="border bc-blue border-3 opacity-100 my-0" />
+            <div class="container p-sm-4 p-2">
+              <ul class="tags list-unstyled">
+                <li class="me-2 my-1">Skill 1</li>
+                <li class="me-2 my-1">Skill 2</li>
+                <li class="me-2 my-1">Skill 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="postedOffers" class="pb-4">
+        <div class="container">
+          <div class="card bc-blue b-shadow b-radius">
+            <h5 class="p-4 mb-0">العروض المقدمة</h5>
+            <hr class="border bc-blue border-3 opacity-100 my-0" />
+            <div class="container p-sm-4 p-2">
+              <div class="row">
+                <div
+                  class="col-12 border border-2 b-shadow bc-st2 b-radius mb-3"
+                >
+                  <div class="card bg-transparent border-0 mb-3">
+                    <div class="row g-0">
+                      <div class="col-xl-1 col-md-2 col-sm-3 text-center p-2">
+                        <img src="../assets/images/Avatar-4.png" width="90" />
+                      </div>
+                      <div class="col-xl-11 col-md-10 col-sm-9">
+                        <div class="card-body p-2">
+                          <div class="row mb-2 align-items-center">
+                            <div class="col-6">
+                              <p class="card-title">
+                                المحامي مرتضي منصور
+                                <small>منذ يومين</small>
+                              </p>
+                              <p class="mb-1 fs-6 c-ti">محامي</p>
+                            </div>
+                            <div class="col-6 text-end">
+                              <small class="d-block c-ti mb-3"
+                                ><img
+                                  src="../assets/images/quotes blue.png"
+                                  alt=""
+                                  class="img-fluid"
+                              /></small>
+                            </div>
+                            <div class="col-12">
+                              <p class="card-text">
+                                لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي
+                                (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم
+                                في صناعات المطابع ودور النشر. كان لوريم إيبسوم
+                                ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر
+                                عندما قامت مطبعة مجهولة برص مجموعة من الأحرف
+                                بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة
+                                دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من
+                                الزمن لم تقضي على هذا النص، بل انه حتى صار
+                              </p>
+                              <button class="btn bg-blue c-white px-5 b-radius">
+                                تواصل
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 border border-2 b-shadow bc-st2 b-radius mb-3"
+                >
+                  <div class="card bg-transparent border-0 mb-3">
+                    <div class="row g-0">
+                      <div class="col-xl-1 col-md-2 col-sm-3 text-center p-2">
+                        <img src="../assets/images/Avatar-4.png" width="90" />
+                      </div>
+                      <div class="col-xl-11 col-md-10 col-sm-9">
+                        <div class="card-body p-2">
+                          <div class="row mb-2 align-items-center">
+                            <div class="col-6">
+                              <p class="card-title">
+                                المحامي مرتضي منصور
+                                <small>منذ يومين</small>
+                              </p>
+                              <p class="mb-1 fs-6 c-ti">محامي</p>
+                            </div>
+                            <div class="col-6 text-end">
+                              <small class="d-block c-ti mb-3"
+                                ><img
+                                  src="../assets/images/quotes blue.png"
+                                  alt=""
+                                  class="img-fluid"
+                              /></small>
+                            </div>
+                            <div class="col-12">
+                              <p class="card-text">
+                                لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي
+                                (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم
+                                في صناعات المطابع ودور النشر. كان لوريم إيبسوم
+                                ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر
+                                عندما قامت مطبعة مجهولة برص مجموعة من الأحرف
+                                بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة
+                                دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من
+                                الزمن لم تقضي على هذا النص، بل انه حتى صار
+                              </p>
+                              <button class="btn bg-blue c-white px-5 b-radius">
+                                تواصل
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container-fluid py-4">
+        <div class="container text-center">
+          <a class="navbar-brand col-12" href="#">
+            <img src="../assets/images/Logo2.png" alt="LoremLogo" />
+          </a>
+          <ul class="d-flex flex-wrap justify-content-center">
+            <li class="p-2">
+              <a
+                class="text-decoration-none text-reset"
+                aria-current="page"
+                href="#"
+                >لوحة التحكم</a
+              >
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">الوظائف</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">الاخبار</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">تعليم</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">اللأداة</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#"
+                >الملف الشخصي</a
+              >
+            </li>
+          </ul>
+          <p>
+            جميع الحقوق محفوظة لشركة لوك كامب
+            <i class="fa-regular fa-copyright"></i>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lawyers/Accountants</title>
+    <!-- google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap 5.3.2 -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/bootstrap/css/bootstrap.rtl.min.css"
+    />
+    <!-- fontawesome 6.5.1 -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/fontawesome/css/all.min.css"
+    />
+    <!-- main cc -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler me-3 bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand me-auto" href="index.html">
+            <img src="../assets/images/Logo.png" alt="LoremLogo" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item text-reset">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >الصفحة الرئيسية</a
+                >
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="news.html">الأخبار</a>
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="laws.html">القوانين</a>
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="viewAllJobs.html">الوظائف</a>
+              </li>
+              <li class="nav-item text-reset dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  العمل الحر
+                </a>
+                <ul class="dropdown-menu linkMenu py-0">
+                  <li>
+                    <a class="dropdown-item" href="cases.html"
+                      >الحالات الخاصة بك</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="addCase.html">إضافة حالة</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="freelance.html"
+                      >البحث عن المستقلين</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown position-relative">
+              <a
+                class="text-decoration-none text-reset dropdown-toggle d-flex align-items-center position-relative"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><i class="fa-regular fa-bell fs-3 me-2"></i>
+                <span
+                  class="badge rounded-pill text-bg-warning position-absolute top-50 translate-middle border border-1 bc-white"
+                  >0</span
+                >
+                <img
+                  src="../assets/images/loremProfile-1.png"
+                  width="40"
+                  class="rounded-circle"
+                  alt=""
+                />
+                <div>
+                  <span class="d-none d-md-block ps-2">محمد الحسيني</span>
+                  <span class="d-none d-md-block ps-2"
+                    >mo_elhosiny@mail.com</span
+                  >
+                </div>
+              </a>
+              <ul
+                class="dropdown-menu profileMenu py-0 position-absolute end-0"
+              >
+                <li class="exclude">
+                  <a href="./profile.html" class="dropdown-item px-1">
+                    <img
+                      src="../assets/images/loremProfile-1.png"
+                      width="40"
+                      class="rounded-circle"
+                      alt=""
+                    />
+                    <div class="d-inline-block">
+                      <span class="ps-2 d-block">محمد الحسيني</span>
+                      <span class="ps-2 d-block">mo_elhosiny@mail.com</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./createCV.html"
+                    >انشاء سيرة ذاتية</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./pricePlan.html"
+                    >خطط التسعير</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./helpCenter.html"
+                    >مركز المساعدة</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./favourites.html">المفضلات</a>
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./accountSettings.html"
+                    >إعدادات الحساب</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./index.html">تسجيل الخروج</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="viewJobHero" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="card mb-3 bc-st2">
+                <div class="row g-0">
+                  <div
+                    class="col-lg-2 col-md-4 col-sm-5 text-sm-start text-center p-3"
+                  >
+                    <img
+                      src="../assets/images/loccamp2.png"
+                      class="img-fluid border border-1 bc-blue b-radius"
+                      alt="Profile"
+                    />
+                  </div>
+                  <div
+                    class="col-lg-10 col-md-8 col-sm-7 text-sm-start text-center"
+                  >
+                    <div class="card-body">
+                      <p class="card-text mb-1 text-end c-blue">منذ 20 يوم</p>
+                      <h5 class="card-title">محامي قانوني</h5>
+                      <p class="card-text">الشركة: لوك كامب المحدودة</p>
+                      <p class="card-text">
+                        العنوان: السادس من أكتوبر، الجيزة، مصر
+                        <img
+                          class="px-2"
+                          src="../assets/images/dot.png"
+                          alt=""
+                        />
+                        التخصص: النقد الدولي
+                        <img
+                          class="px-2"
+                          src="../assets/images/dot.png"
+                          alt=""
+                        />
+                        الخبرة: مستوي متوسط
+                      </p>
+
+                      <p class="card-text">نوع الوظيفة: دوام جزئي</p>
+                      <div class="row">
+                        <div
+                          class="input-group col-md justify-content-md-start justify-content-center"
+                        >
+                          <button class="btn bg-blue c-white mb-2 apply">
+                            تقديم للوظيفة
+                          </button>
+                          <button class="btn c-blue bc-st mb-2">
+                            مشاركة <i class="fa-solid fa-share"></i>
+                          </button>
+                          <button class="btn bc-st c-it mb-2">
+                            <i class="fa-regular fa-eye-slash"></i> إخفاء
+                          </button>
+                        </div>
+                        <div class="col-md text-end">
+                          <span class="float-end">
+                            <a href="" class="btn fs-4"
+                              ><i class="fa-brands fa-square-facebook"></i
+                            ></a>
+                            <a href="" class="btn fs-4"
+                              ><i class="fa-brands fa-twitter"></i
+                            ></a>
+                            <a href="" class="btn fs-4"
+                              ><i class="fa-brands fa-square-instagram"></i
+                            ></a>
+                            <a href="" class="btn fs-4"
+                              ><i class="fa-brands fa-pinterest"></i
+                            ></a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="viewJobDesc" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="container-fluid px-0">
+                <div class="row">
+                  <div class="col-12 mb-4">
+                    <h2 class="fw-semibold">متطلبات العمل</h2>
+                    <ul style="list-style-type: square">
+                      <li class="mb-2">
+                        خبرة عمل مثبتة كمصمم UI/UX أو دور مماثل
+                      </li>
+                      <li class="mb-2">مجموعة من مشاريع التصميم</li>
+                      <li class="mb-2">
+                        معرفة أدوات الإطار السلكي (مثل Wireframe.cc وInVision)
+                      </li>
+                      <li class="mb-2">
+                        معرفة حديثة ببرامج التصميم مثل Adobe Illustrator
+                        وPhotoshop
+                      </li>
+                      <li class="mb-2">
+                        روح الفريق؛ مهارات اتصال قوية للتعاون مع مختلف أصحاب
+                        المصلحة
+                      </li>
+                      <li class="mb-2">مهارات جيدة في إدارة الوقت</li>
+                      <li class="mb-2">
+                        بكالوريوس في التصميم أو علوم الكمبيوتر أو المجال ذي
+                        الصلة
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12 mb-4">
+                    <div class="card bc-st2 b-radius b-shadow">
+                      <h5 class="p-4 mb-0">المهارات</h5>
+                      <hr class="border bc-blue border-3 opacity-100 my-0" />
+                      <div class="container p-4 skills">
+                        <ul class="d-flex flex-wrap mb-0 p-0 list-unstyled">
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            البحث
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            التعلم
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            الاستمرارية
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            التواصل
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            البحث
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            التعلم
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            الاستمرارية
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            التواصل
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            البحث
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            التعلم
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            التعلم
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            الاستمرارية
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            التواصل
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            البحث
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            التعلم
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            الاستمرارية
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mb-4">
+                    <div class="card bc-st2 b-radius b-shadow">
+                      <h5 class="p-4 mb-0">الكلمات المفتاحية</h5>
+                      <hr class="border bc-blue border-3 opacity-100 my-0" />
+                      <div class="container p-4 skills">
+                        <ul class="d-flex flex-wrap mb-0 p-0 list-unstyled">
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            محامي
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            النقد
+                          </li>
+                          <li
+                            class="px-sm-3 px-2 py-3 bg-st2 me-2 border border-1 bc-blue mb-2 b-radius"
+                          >
+                            دوام جزئي
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card bc-st2 b-radius b-shadow mb-4">
+                <h5 class="p-4 mb-0">الروابط</h5>
+                <hr class="border bc-blue border-3 opacity-100 my-0" />
+                <div class="container p-4 lang">
+                  <label for="facebook" class="form-label">facebook</label>
+                  <input
+                    type="text"
+                    id="facebook"
+                    class="form-control bc-st2 b-h-radius mb-3"
+                    readonly
+                    value="https://facebook.com"
+                  />
+                  <label for="website" class="form-label"
+                    >الموقع الالكتروني</label
+                  >
+                  <input
+                    type="text"
+                    id="website"
+                    class="form-control bc-st2 b-h-radius mb-3"
+                    readonly
+                    value="https://website.com"
+                  />
+                  <label for="instagram" class="form-label">instagram</label>
+                  <input
+                    type="text"
+                    id="instagram"
+                    class="form-control bc-st2 b-h-radius mb-3"
+                    readonly
+                    value="https://instagram.com"
+                  />
+                  <label for="linkedin" class="form-label">Linkedin</label>
+                  <input
+                    type="text"
+                    id="linkedin"
+                    class="form-control bc-st2 b-h-radius"
+                    readonly
+                    value="https://linkedin.com"
+                  />
+                </div>
+              </div>
+              <div class="card bc-st2 mb-4 b-radius b-shadow">
+                <h5 class="p-4 mb-0">اللغات</h5>
+                <hr class="border bc-blue border-3 opacity-100 my-0" />
+                <div class="container p-4 lang">
+                  <ul class="fs-5 mb-0">
+                    <li class="mb-2">
+                      اللغة العربية (اللغة الام) <br />
+                      <span class="c-blue"
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                      ></span>
+                    </li>
+                    <li class="mb-2">
+                      اللغة الانجليزية (طليق) <br />
+                      <span class="c-blue"
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                      ></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card bc-st2 b-radius b-shadow">
+                <h5 class="p-4 mb-0">وظائف مميزة</h5>
+                <hr class="border bc-blue border-3 opacity-100 my-0" />
+                <div class="container p-4">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <div class="card bc-st2 b-h-radius b-shadow">
+                        <div class="row g-0 align-items-center">
+                          <div
+                            class="col-lg-3 col-md-4 col-sm-5 text-center p-1"
+                          >
+                            <img
+                              src="../assets/images/loccamp.png"
+                              class="img-fluid rounded-start border border-1 bc-st2 b-radius"
+                              alt="..."
+                            />
+                          </div>
+                          <div
+                            class="col-lg-9 col-md-8 col-sm-7 text-sm-start text-center"
+                          >
+                            <div class="card-body">
+                              <p class="card-text mb-0 text-end c-blue">
+                                منذ 20 يوم
+                              </p>
+                              <h5 class="card-title mb-1">
+                                Senior HR Generalist
+                              </h5>
+                              <p class="card-text mb-0">من المكتب</p>
+                              <p class="card-text mb-0">مصر, الجيزة</p>
+                              <p class="card-text mb-0">
+                                يناير 2019 إلى يناير 2023 · 4 أعوام
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <div class="card bc-st2 b-h-radius b-shadow">
+                        <div class="row g-0 align-items-center">
+                          <div
+                            class="col-lg-3 col-md-4 col-sm-5 text-center p-1"
+                          >
+                            <img
+                              src="../assets/images/loccamp.png"
+                              class="img-fluid rounded-start border border-1 bc-st2 b-radius"
+                              alt="..."
+                            />
+                          </div>
+                          <div
+                            class="col-lg-9 col-md-8 col-sm-7 text-sm-start text-center"
+                          >
+                            <div class="card-body">
+                              <p class="card-text mb-0 text-end c-blue">
+                                منذ 20 يوم
+                              </p>
+                              <h5 class="card-title mb-1">
+                                Senior HR Generalist
+                              </h5>
+                              <p class="card-text mb-0">من المكتب</p>
+                              <p class="card-text mb-0">مصر, الجيزة</p>
+                              <p class="card-text mb-0">
+                                يناير 2019 إلى يناير 2023 · 4 أعوام
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <div class="card bc-st2 b-h-radius b-shadow">
+                        <div class="row g-0 align-items-center">
+                          <div
+                            class="col-lg-3 col-md-4 col-sm-5 text-center p-1"
+                          >
+                            <img
+                              src="../assets/images/loccamp.png"
+                              class="img-fluid rounded-start border border-1 bc-st2 b-radius"
+                              alt="..."
+                            />
+                          </div>
+                          <div
+                            class="col-lg-9 col-md-8 col-sm-7 text-sm-start text-center"
+                          >
+                            <div class="card-body">
+                              <p class="card-text mb-0 text-end c-blue">
+                                منذ 20 يوم
+                              </p>
+                              <h5 class="card-title mb-1">
+                                Senior HR Generalist
+                              </h5>
+                              <p class="card-text mb-0">من المكتب</p>
+                              <p class="card-text mb-0">مصر, الجيزة</p>
+                              <p class="card-text mb-0">
+                                يناير 2019 إلى يناير 2023 · 4 أعوام
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <div class="card bc-st2 b-h-radius b-shadow">
+                        <div class="row g-0 align-items-center">
+                          <div
+                            class="col-lg-3 col-md-4 col-sm-5 text-center p-1"
+                          >
+                            <img
+                              src="../assets/images/loccamp.png"
+                              class="img-fluid rounded-start border border-1 bc-st2 b-radius"
+                              alt="..."
+                            />
+                          </div>
+                          <div
+                            class="col-lg-9 col-md-8 col-sm-7 text-sm-start text-center"
+                          >
+                            <div class="card-body">
+                              <p class="card-text mb-0 text-end c-blue">
+                                منذ 20 يوم
+                              </p>
+                              <h5 class="card-title mb-1">
+                                Senior HR Generalist
+                              </h5>
+                              <p class="card-text mb-0">من المكتب</p>
+                              <p class="card-text mb-0">مصر, الجيزة</p>
+                              <p class="card-text mb-0">
+                                يناير 2019 إلى يناير 2023 · 4 أعوام
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container-fluid py-4">
+        <div class="container text-center">
+          <a class="navbar-brand col-12" href="#">
+            <img src="../assets/images/Logo2.png" alt="LoremLogo" />
+          </a>
+          <ul class="d-flex flex-wrap justify-content-center">
+            <li class="p-2">
+              <a
+                class="text-decoration-none text-reset"
+                aria-current="page"
+                href="#"
+                >لوحة التحكم</a
+              >
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">الوظائف</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">الاخبار</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">تعليم</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">اللأداة</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#"
+                >الملف الشخصي</a
+              >
+            </li>
+          </ul>
+          <p>
+            جميع الحقوق محفوظة لشركة لوك كامب
+            <i class="fa-regular fa-copyright"></i>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <section id="viewJobApply" class="hidden">
+      <div class="layout">
+        <div class="container-fluid pb-5 pt-2 mb-5 overflow-auto text-end">
+          <span class="c-white close">
+            <i class="fa-regular fa-circle-xmark"></i
+          ></span>
+        </div>
+        <div class="container">
+          <div class="card border-0 rounded-0">
+            <h4 class="py-3 px-4 mb-0">معلومات الاتصال</h4>
+            <div
+              class="progress rounded-0 bg-st2"
+              role="progressbar"
+              aria-label="Basic example"
+              aria-valuenow="33"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar bg-blue" style="width: 33%"></div>
+            </div>
+            <div class="card-body p-4">
+              <form class="position-relative" method="get">
+                <div class="steps">
+                  <div class="card mb-3 border-0" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-md-4 text-md-start text-center">
+                        <img
+                          src="../assets/images/profileHero.png"
+                          class="img-fluid rounded-circle"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8 text-md-start text-center">
+                        <div class="card-body">
+                          <h4 class="card-title fw-semibold">
+                            زياد عبدالعظيم علي
+                          </h4>
+                          <p class="card-text fw-semibold mb-1">محامي</p>
+                          <p class="card-text fw-semibold mb-1">
+                            بني سويف, مصر
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="email" class="form-label"
+                      >البريد الالكتروني</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control bc-st2 b-radius"
+                      id="email"
+                      name="email"
+                      dir="rtl"
+                      value="example@gmail.com"
+                      placeholder="البريد الالكتروني"
+                    />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="phone" class="form-label">رقم الهاتف</label>
+                    <input
+                      type="text"
+                      class="form-control bc-st2 b-radius"
+                      id="phone"
+                      name="phone"
+                      value="01140093466"
+                      placeholder="رقم الهاتف"
+                    />
+                  </div>
+                </div>
+                <div class="steps hidden">
+                  <div class="form-group mb-3">
+                    <label for="profileUrl" class="form-label"
+                      >رابط الملف الشخصي</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control bc-st2 b-radius"
+                      id="profileUrl"
+                      name="profileUrl"
+                      value="https://www.behance.net/zeyadazoomhttps://www.behance.net/zeyadazoom"
+                      placeholder="رابط الملف الشخصي"
+                    />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label class="form-label">السيرة الذاتية</label>
+                    <div
+                      class="mb-2 align-items-center flex-wrap border border-1 b-radius bc-st2 px-3 py-2 overflow-auto text-align-center d-flex"
+                    >
+                      <div class="col-md-1 col-sm-2 col-3 text-center">
+                        <img src="../assets/images/sheet 1.png" alt="" />
+                      </div>
+                      <div class="col-md-9 col-sm-8 col-9">
+                        <p class="mb-0">زياد عبدالعظيم- محامي - pdf</p>
+                        <p class="mb-0">أخر تحديث 2013/5/5</p>
+                      </div>
+                      <div class="col-md-2 col-sm-2 col-12 text-end">
+                        <button class="btn bg-main c-white">
+                          <i class="fa-solid fa-download"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <input
+                      type="file"
+                      class="form-control bc-st2 b-radius"
+                      id="cv"
+                      name="cv"
+                      hidden
+                    />
+                    <label
+                      for="cv"
+                      class="border border-2 bc-main b-d-radius py-1 px-3 mb-1"
+                      >رفع السيرة الذاتية</label
+                    >
+                    <br />
+                    <small>DOC, DOCX, PDF (٢ ميغابايت)</small>
+                  </div>
+                </div>
+                <div class="steps hidden">
+                  <div class="form-group mb-3">
+                    <label for="message" class="form-label"
+                      >رسالة التغطية</label
+                    >
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="10"
+                      class="form-control bc-st2 b-radius"
+                      placeholder="رسالة التغطية"
+                    ></textarea>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="notification" class="form-label"
+                      >فترة الإشعار</label
+                    >
+                    <input
+                      placeholder="فترة الإشعار"
+                      type="text"
+                      name="notification"
+                      id="notification"
+                      class="form-control bc-st2 b-radius"
+                    />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="experience" class="form-label"
+                      >عدد سنين الخبرة</label
+                    >
+                    <input
+                      placeholder="فترة الإشعار"
+                      type="text"
+                      name="experience"
+                      id="experience"
+                      class="form-control bc-st2 b-radius"
+                    />
+                  </div>
+                </div>
+              </form>
+              <div class="form-group">
+                <button
+                  class="btn bg-blue col-lg-2 col-md-4 col-5 me-2 c-white b-d-radius next"
+                >
+                  التالي
+                </button>
+                <button
+                  class="btn bc-blue col-lg-2 col-md-4 col-5 c-blue b-d-radius back hidden"
+                >
+                  الرجوع
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      let jobApply = document.querySelector("#viewJobApply");
+      let steps = document.querySelectorAll("#viewJobApply .steps");
+      let progress = document.querySelector(".progress .progress-bar");
+      let apply = document.querySelector("#viewJobHero .apply");
+      let next = document.querySelector("#viewJobApply button.next");
+      let back = document.querySelector("#viewJobApply button.back");
+      let form = document.querySelector("#viewJobApply form");
+      let closeBtn = document.querySelector(".close");
+      closeBtn.addEventListener("click", () => {
+        jobApply.classList.add("hidden");
+      });
+      currentActive = 0;
+      apply.addEventListener("click", () => {
+        if (jobApply.classList.contains("hidden")) {
+          jobApply.classList.remove("hidden");
+        }
+      });
+      next.addEventListener("click", () => {
+        if (currentActive != 2) {
+          steps[currentActive].classList.add("hidden");
+          steps[currentActive + 1].classList.remove("hidden");
+          currentActive++;
+          back.classList.remove("hidden");
+          progress.style.width = "66%";
+        }
+        if (currentActive == 2) {
+          next.innerText = "تقديم";
+          next.setAttribute("onclick", "formSubmit()");
+          progress.style.width = "99%";
+        }
+      });
+      back.addEventListener("click", () => {
+        if (currentActive == 2) {
+          next.innerText = "التالي";
+          next.removeAttribute("onclick");
+        }
+        if (currentActive != 0) {
+          steps[currentActive].classList.add("hidden");
+          steps[currentActive - 1].classList.remove("hidden");
+          currentActive--;
+          progress.style.width = "66%";
+        }
+
+        if (currentActive == 0) {
+          back.classList.add("hidden");
+          progress.style.width = "33%";
+        }
+      });
+      function formSubmit() {
+        form.submit();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lawyers/Accountants</title>
+    <!-- google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap 5.3.2 -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/bootstrap/css/bootstrap.rtl.min.css"
+    />
+    <!-- fontawesome 6.5.1 -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/fontawesome/css/all.min.css"
+    />
+    <!-- main cc -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler me-3 bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand me-auto" href="index.html">
+            <img src="../assets/images/Logo.png" alt="LoremLogo" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item text-reset">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >الصفحة الرئيسية</a
+                >
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="news.html">الأخبار</a>
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="laws.html">القوانين</a>
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="viewAllJobs.html">الوظائف</a>
+              </li>
+              <li class="nav-item text-reset dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  العمل الحر
+                </a>
+                <ul class="dropdown-menu linkMenu py-0">
+                  <li>
+                    <a class="dropdown-item" href="cases.html"
+                      >الحالات الخاصة بك</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="addCase.html">إضافة حالة</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="freelance.html"
+                      >البحث عن المستقلين</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown position-relative">
+              <a
+                class="text-decoration-none text-reset dropdown-toggle d-flex align-items-center position-relative"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><i class="fa-regular fa-bell fs-3 me-2"></i>
+                <span
+                  class="badge rounded-pill text-bg-warning position-absolute top-50 translate-middle border border-1 bc-white"
+                  >0</span
+                >
+                <img
+                  src="../assets/images/loremProfile-1.png"
+                  width="40"
+                  class="rounded-circle"
+                  alt=""
+                />
+                <div>
+                  <span class="d-none d-md-block ps-2">محمد الحسيني</span>
+                  <span class="d-none d-md-block ps-2"
+                    >mo_elhosiny@mail.com</span
+                  >
+                </div>
+              </a>
+              <ul
+                class="dropdown-menu profileMenu py-0 position-absolute end-0"
+              >
+                <li class="exclude">
+                  <a href="./profile.html" class="dropdown-item px-1">
+                    <img
+                      src="../assets/images/loremProfile-1.png"
+                      width="40"
+                      class="rounded-circle"
+                      alt=""
+                    />
+                    <div class="d-inline-block">
+                      <span class="ps-2 d-block">محمد الحسيني</span>
+                      <span class="ps-2 d-block">mo_elhosiny@mail.com</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./createCV.html"
+                    >انشاء سيرة ذاتية</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./pricePlan.html"
+                    >خطط التسعير</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./helpCenter.html"
+                    >مركز المساعدة</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./favourites.html">المفضلات</a>
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./accountSettings.html"
+                    >إعدادات الحساب</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./index.html">تسجيل الخروج</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="searchHero" class="py-5">
+        <div class="container">
+          <h2 class="c-white mb-5">
+            استكشف الفرص الوظيفية الجديدة
+            <small class="fs-5"
+              >يوجد
+              <span class="c-blue text-decoration-underline"
+                >300 وظيفة</span
+              ></small
+            >
+          </h2>
+          <div class="row position-relative">
+            <div class="col-md-4 order-md-1 order-3 position-absolute">
+              <div class="d-md-block d-none" id="sidebarToggle">
+                <div class="sidebar" id="sidebar">
+                  <div class="card mb-3 bc-st2 b-shadow">
+                    <h2 class="fw-normal fs-4 p-2">تصفية الوظائف</h2>
+                    <hr class="border bc-blue border-3 opacity-100 my-0" />
+                    <!-- =========================================== -->
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                      <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#perLocation"
+                            aria-expanded="true"
+                            aria-controls="#perLocation"
+                          >
+                            الأقسام
+                          </button>
+                        </h2>
+                        <div
+                          id="perLocation"
+                          class="accordion-collapse collapse show"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <ul class="list-unstyled">
+                              <li class="mb-2">
+                                <input
+                                  type="text"
+                                  name="section"
+                                  id="all"
+                                  class="form-control bc-st2"
+                                  placeholder="القسم..."
+                                />
+                              </li>
+                              <li class="mb-2">
+                                <input
+                                  type="checkbox"
+                                  name="location"
+                                  id="all"
+                                  class="form-check-input bc-blue"
+                                />
+                                <label for="all">الكل</label>
+                              </li>
+                              <li class="mb-2">
+                                <input
+                                  type="checkbox"
+                                  name="section"
+                                  id="familyandpersonal"
+                                  class="form-check-input bc-blue"
+                                />
+                                <label for="familyandpersonal"
+                                  >الأحوال الشخصية و الأسرة</label
+                                >
+                              </li>
+                              <li class="mb-2">
+                                <input
+                                  type="checkbox"
+                                  name="section"
+                                  id="civil"
+                                  class="form-check-input bc-blue"
+                                />
+                                <label for="civil">القضايا المدنية</label>
+                              </li>
+                              <li class="mb-2">
+                                <input
+                                  type="checkbox"
+                                  name="section"
+                                  id="commerce"
+                                  class="form-check-input bc-blue"
+                                />
+                                <label for="commerce">القضايا التجارية</label>
+                              </li>
+                              <li class="mb-2 text-decoration-underline">
+                                <i class="fa-solid fa-plus"></i>عرض المزيد
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="border bc-st2 border-3 opacity-100 my-0" />
+                      <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#perLevel"
+                            aria-expanded="false"
+                            aria-controls="#perLevel"
+                          >
+                            نوع الوظيفة
+                          </button>
+                        </h2>
+                        <div
+                          id="perLevel"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <ul class="list-unstyled">
+                              <li class="mb-2">
+                                <input
+                                  type="checkbox"
+                                  name="experience"
+                                  id="manager"
+                                  class="form-check-input bc-blue"
+                                />
+                                <label for="manager">مدير</label>
+                              </li>
+                              <li class="mb-2">
+                                <input
+                                  type="checkbox"
+                                  name="experience"
+                                  id="expert"
+                                  class="form-check-input bc-blue"
+                                />
+                                <label for="expert">خبير</label>
+                              </li>
+                              <li class="mb-2">
+                                <input
+                                  type="checkbox"
+                                  name="experience"
+                                  id="midLevel"
+                                  class="form-check-input bc-blue"
+                                />
+                                <label for="medLevel">مستوى متوسط</label>
+                              </li>
+                              <li class="mb-2">
+                                <input
+                                  type="checkbox"
+                                  name="experience"
+                                  id="entry"
+                                  class="form-check-input bc-blue"
+                                />
+                                <label for="entry">مبتدإ</label>
+                              </li>
+                              <li class="mb-2">
+                                <input
+                                  type="checkbox"
+                                  name="experience"
+                                  id="student"
+                                  class="form-check-input bc-blue"
+                                />
+                                <label for="student">طالب</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="border bc-st2 border-3 opacity-100 my-0" />
+                      <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#workLocation"
+                            aria-expanded="false"
+                            aria-controls="#workLocation"
+                          >
+                            نوع الوظيفة
+                          </button>
+                        </h2>
+                        <div
+                          id="workLocation"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <ul class="list-unstyled">
+                              <li class="mb-2">
+                                <input
+                                  type="checkbox"
+                                  name="location"
+                                  id="office"
+                                  class="form-check-input bc-blue"
+                                />
+                                <label for="office">المكتب</label>
+                              </li>
+                              <li class="mb-2">
+                                <input
+                                  type="checkbox"
+                                  name="location"
+                                  id="home"
+                                  class="form-check-input bc-blue"
+                                />
+                                <label for="home">المنزل</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="border bc-st2 border-3 opacity-100 my-0" />
+                      <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#perExperience"
+                            aria-expanded="false"
+                            aria-controls="#perExperience"
+                          >
+                            مستوى الوظيفة
+                          </button>
+                        </h2>
+                        <div
+                          id="perExperience"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <ul class="list-unstyled">
+                              <li class="mb-2">
+                                <input
+                                  type="checkbox"
+                                  name="experience"
+                                  id="manager"
+                                  class="form-check-input bc-blue"
+                                />
+                                <label for="manager">مدير</label>
+                              </li>
+                              <li class="mb-2">
+                                <input
+                                  type="checkbox"
+                                  name="experience"
+                                  id="expert"
+                                  class="form-check-input bc-blue"
+                                />
+                                <label for="expert">خبير</label>
+                              </li>
+                              <li class="mb-2">
+                                <input
+                                  type="checkbox"
+                                  name="experience"
+                                  id="midLevel"
+                                  class="form-check-input bc-blue"
+                                />
+                                <label for="medLevel">مستوى متوسط</label>
+                              </li>
+                              <li class="mb-2">
+                                <input
+                                  type="checkbox"
+                                  name="experience"
+                                  id="entry"
+                                  class="form-check-input bc-blue"
+                                />
+                                <label for="entry">مبتدإ</label>
+                              </li>
+                              <li class="mb-2">
+                                <input
+                                  type="checkbox"
+                                  name="experience"
+                                  id="student"
+                                  class="form-check-input bc-blue"
+                                />
+                                <label for="student">طالب</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- =========================================== -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 order-md-2 order-1 mb-md-0 mb-2 ms-auto">
+              <div class="card px-0 bc-st2 b-radius">
+                <div class="container-fluid">
+                  <div class="row align-items-center">
+                    <div class="col-lg-9 col-md-8 col-sm-7">
+                      <h5 class="py-4 px-md-0 ps-3 mb-0">البحث عن وظائف</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-5 text-center">
+                      <button
+                        type="button"
+                        class="btn text-secondary px-0"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="This top tooltip is themed via CSS variables."
+                      >
+                        نصائح لنتائج بحث افضل
+                        <i class="fa-solid fa-circle-info"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <hr class="border bc-blue border-3 opacity-100 my-0" />
+                <div class="container p-4">
+                  <div class="input-group input-group-lg mb-3">
+                    <input
+                      type="text"
+                      class="form-control b-sradius bc-st2"
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-default"
+                      placeholder="البحث عن وظائف..."
+                    />
+                    <button
+                      class="input-group-text btn bg-blue b-eradius c-white"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i> بحث
+                    </button>
+                  </div>
+                  <h5>
+                    اخر نتائج البحث:
+                    <a href="" class="text-reset me-3">محامي نقد</a>
+                    <a href="" class="text-reset me-3">محامي احوال مدنية</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+
+            <div
+              id="humbergerMenu"
+              class="px-3 order-md-3 order-2 py-1 fs-3 d-md-none d-block bg-white mx-auto w-50 b-h-radius"
+            >
+              تصفية السير الذاتية
+              <span class="c-blue"
+                ><i class="fa-solid fa-arrow-down-short-wide"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="searchResult" class="py-5">
+        <div class="container">
+          <div class="row col-md-8 col ms-sm-auto">
+            <div class="col-12 mb-4">
+              <h1 class="fw-normal fs-2">الوظائف</h1>
+            </div>
+            <div class="col-12 mb-2">
+              <a href="viewJob.html" class="text-decoration-none">
+                <div class="card mb-3 bc-st2 b-shadow b-radius">
+                  <div class="row g-0">
+                    <div
+                      class="col-lg-2 col-md-4 col-sm-5 text-sm-start text-center p-3"
+                    >
+                      <img
+                        src="../assets/images/loccamp.png"
+                        class="img-fluid rounded-start"
+                        alt="Profile"
+                      />
+                    </div>
+                    <div
+                      class="col-lg-10 col-md-8 col-sm-7 text-sm-start text-center"
+                    >
+                      <div class="card-body">
+                        <h6 class="card-title text-end c-blue mb-0">
+                          منذ 20 يوم
+                        </h6>
+                        <h5 class="card-title">محامي قانوني</h5>
+                        <p class="card-text mb-1">الشركة: لوك كامب المتحددة</p>
+                        <p class="card-text mb-1">
+                          العنوان: السادس من أكتوبر، الجيزة، مصر
+                          <img
+                            class="px-2"
+                            src="../assets/images/dot.png"
+                            alt=""
+                          />مكان العمل: من المكتب
+                          <img
+                            class="px-2"
+                            src="../assets/images/dot.png"
+                            alt=""
+                          />مستوي الوظيفة: مدير
+                        </p>
+                        <p class="card-text mb-2">نوع الوظيفة: دوام جزئي</p>
+                        <div
+                          class="input-group justify-content-sm-start justify-content-end"
+                        >
+                          <button class="btn bc-st b-sradius c-blue">
+                            <i class="fa-solid fa-share"></i> مشاركة
+                          </button>
+                          <button class="btn bc-st b-eradius c-st">
+                            <i class="fa-regular fa-eye-slash"></i> إخفاء
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="col-12 mb-2">
+              <a href="viewJob.html" class="text-decoration-none">
+                <div class="card mb-3 bc-st2 b-shadow b-radius">
+                  <div class="row g-0">
+                    <div
+                      class="col-lg-2 col-md-4 col-sm-5 text-sm-start text-center p-3"
+                    >
+                      <img
+                        src="../assets/images/loccamp.png"
+                        class="img-fluid rounded-start"
+                        alt="Profile"
+                      />
+                    </div>
+                    <div
+                      class="col-lg-10 col-md-8 col-sm-7 text-sm-start text-center"
+                    >
+                      <div class="card-body">
+                        <h6 class="card-title text-end c-blue mb-0">
+                          منذ 20 يوم
+                        </h6>
+                        <h5 class="card-title">محامي قانوني</h5>
+                        <p class="card-text mb-1">الشركة: لوك كامب المتحددة</p>
+                        <p class="card-text mb-1">
+                          العنوان: السادس من أكتوبر، الجيزة، مصر
+                          <img
+                            class="px-2"
+                            src="../assets/images/dot.png"
+                            alt=""
+                          />مكان العمل: من المكتب
+                          <img
+                            class="px-2"
+                            src="../assets/images/dot.png"
+                            alt=""
+                          />مستوي الوظيفة: مدير
+                        </p>
+                        <p class="card-text mb-2">نوع الوظيفة: دوام جزئي</p>
+                        <div
+                          class="input-group justify-content-sm-start justify-content-end"
+                        >
+                          <button class="btn bc-st b-sradius c-blue">
+                            <i class="fa-solid fa-share"></i> مشاركة
+                          </button>
+                          <button class="btn bc-st b-eradius c-st">
+                            <i class="fa-regular fa-eye-slash"></i> إخفاء
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="col-12 mb-2">
+              <a href="viewJob.html" class="text-decoration-none">
+                <div class="card mb-3 bc-st2 b-shadow b-radius">
+                  <div class="row g-0">
+                    <div
+                      class="col-lg-2 col-md-4 col-sm-5 text-sm-start text-center p-3"
+                    >
+                      <img
+                        src="../assets/images/loccamp.png"
+                        class="img-fluid rounded-start"
+                        alt="Profile"
+                      />
+                    </div>
+                    <div
+                      class="col-lg-10 col-md-8 col-sm-7 text-sm-start text-center"
+                    >
+                      <div class="card-body">
+                        <h6 class="card-title text-end c-blue mb-0">
+                          منذ 20 يوم
+                        </h6>
+                        <h5 class="card-title">محامي قانوني</h5>
+                        <p class="card-text mb-1">الشركة: لوك كامب المتحددة</p>
+                        <p class="card-text mb-1">
+                          العنوان: السادس من أكتوبر، الجيزة، مصر
+                          <img
+                            class="px-2"
+                            src="../assets/images/dot.png"
+                            alt=""
+                          />مكان العمل: من المكتب
+                          <img
+                            class="px-2"
+                            src="../assets/images/dot.png"
+                            alt=""
+                          />مستوي الوظيفة: مدير
+                        </p>
+                        <p class="card-text mb-2">نوع الوظيفة: دوام جزئي</p>
+                        <div
+                          class="input-group justify-content-sm-start justify-content-end"
+                        >
+                          <button class="btn bc-st b-sradius c-blue">
+                            <i class="fa-solid fa-share"></i> مشاركة
+                          </button>
+                          <button class="btn bc-st b-eradius c-st">
+                            <i class="fa-regular fa-eye-slash"></i> إخفاء
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="col-12 mb-2">
+              <a href="viewJob.html" class="text-decoration-none">
+                <div class="card mb-3 bc-st2 b-shadow b-radius">
+                  <div class="row g-0">
+                    <div
+                      class="col-lg-2 col-md-4 col-sm-5 text-sm-start text-center p-3"
+                    >
+                      <img
+                        src="../assets/images/loccamp.png"
+                        class="img-fluid rounded-start"
+                        alt="Profile"
+                      />
+                    </div>
+                    <div
+                      class="col-lg-10 col-md-8 col-sm-7 text-sm-start text-center"
+                    >
+                      <div class="card-body">
+                        <h6 class="card-title text-end c-blue mb-0">
+                          منذ 20 يوم
+                        </h6>
+                        <h5 class="card-title">محامي قانوني</h5>
+                        <p class="card-text mb-1">الشركة: لوك كامب المتحددة</p>
+                        <p class="card-text mb-1">
+                          العنوان: السادس من أكتوبر، الجيزة، مصر
+                          <img
+                            class="px-2"
+                            src="../assets/images/dot.png"
+                            alt=""
+                          />مكان العمل: من المكتب
+                          <img
+                            class="px-2"
+                            src="../assets/images/dot.png"
+                            alt=""
+                          />مستوي الوظيفة: مدير
+                        </p>
+                        <p class="card-text mb-2">نوع الوظيفة: دوام جزئي</p>
+                        <div
+                          class="input-group justify-content-sm-start justify-content-end"
+                        >
+                          <button class="btn bc-st b-sradius c-blue">
+                            <i class="fa-solid fa-share"></i> مشاركة
+                          </button>
+                          <button class="btn bc-st b-eradius c-st">
+                            <i class="fa-regular fa-eye-slash"></i> إخفاء
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="col-12 mb-2">
+              <a href="viewJob.html" class="text-decoration-none">
+                <div class="card mb-3 bc-st2 b-shadow b-radius">
+                  <div class="row g-0">
+                    <div
+                      class="col-lg-2 col-md-4 col-sm-5 text-sm-start text-center p-3"
+                    >
+                      <img
+                        src="../assets/images/loccamp.png"
+                        class="img-fluid rounded-start"
+                        alt="Profile"
+                      />
+                    </div>
+                    <div
+                      class="col-lg-10 col-md-8 col-sm-7 text-sm-start text-center"
+                    >
+                      <div class="card-body">
+                        <h6 class="card-title text-end c-blue mb-0">
+                          منذ 20 يوم
+                        </h6>
+                        <h5 class="card-title">محامي قانوني</h5>
+                        <p class="card-text mb-1">الشركة: لوك كامب المتحددة</p>
+                        <p class="card-text mb-1">
+                          العنوان: السادس من أكتوبر، الجيزة، مصر
+                          <img
+                            class="px-2"
+                            src="../assets/images/dot.png"
+                            alt=""
+                          />مكان العمل: من المكتب
+                          <img
+                            class="px-2"
+                            src="../assets/images/dot.png"
+                            alt=""
+                          />مستوي الوظيفة: مدير
+                        </p>
+                        <p class="card-text mb-2">نوع الوظيفة: دوام جزئي</p>
+                        <div
+                          class="input-group justify-content-sm-start justify-content-end"
+                        >
+                          <button class="btn bc-st b-sradius c-blue">
+                            <i class="fa-solid fa-share"></i> مشاركة
+                          </button>
+                          <button class="btn bc-st b-eradius c-st">
+                            <i class="fa-regular fa-eye-slash"></i> إخفاء
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="col-12 mb-2">
+              <a href="viewJob.html" class="text-decoration-none">
+                <div class="card mb-3 bc-st2 b-shadow b-radius">
+                  <div class="row g-0">
+                    <div
+                      class="col-lg-2 col-md-4 col-sm-5 text-sm-start text-center p-3"
+                    >
+                      <img
+                        src="../assets/images/loccamp.png"
+                        class="img-fluid rounded-start"
+                        alt="Profile"
+                      />
+                    </div>
+                    <div
+                      class="col-lg-10 col-md-8 col-sm-7 text-sm-start text-center"
+                    >
+                      <div class="card-body">
+                        <h6 class="card-title text-end c-blue mb-0">
+                          منذ 20 يوم
+                        </h6>
+                        <h5 class="card-title">محامي قانوني</h5>
+                        <p class="card-text mb-1">الشركة: لوك كامب المتحددة</p>
+                        <p class="card-text mb-1">
+                          العنوان: السادس من أكتوبر، الجيزة، مصر
+                          <img
+                            class="px-2"
+                            src="../assets/images/dot.png"
+                            alt=""
+                          />مكان العمل: من المكتب
+                          <img
+                            class="px-2"
+                            src="../assets/images/dot.png"
+                            alt=""
+                          />مستوي الوظيفة: مدير
+                        </p>
+                        <p class="card-text mb-2">نوع الوظيفة: دوام جزئي</p>
+                        <div
+                          class="input-group justify-content-sm-start justify-content-end"
+                        >
+                          <button class="btn bc-st b-sradius c-blue">
+                            <i class="fa-solid fa-share"></i> مشاركة
+                          </button>
+                          <button class="btn bc-st b-eradius c-st">
+                            <i class="fa-regular fa-eye-slash"></i> إخفاء
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item me-sm-3 me-1">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </li>
+              <li class="page-item me-sm-3 me-1">
+                <a class="page-link bg-blue c-white" href="#">1</a>
+              </li>
+              <li class="page-item me-sm-3 me-1">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item me-sm-3 me-1">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item me-sm-3 me-1">
+                <a class="page-link" href="#">4</a>
+              </li>
+              <li class="page-item me-sm-3 me-1">
+                <a class="page-link" href="#">5</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container-fluid py-4">
+        <div class="container text-center">
+          <a class="navbar-brand col-12" href="#">
+            <img src="../assets/images/Logo2.png" alt="LoremLogo" />
+          </a>
+          <ul class="d-flex flex-wrap justify-content-center">
+            <li class="p-2">
+              <a
+                class="text-decoration-none text-reset"
+                aria-current="page"
+                href="#"
+                >لوحة التحكم</a
+              >
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">الوظائف</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">الاخبار</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">تعليم</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">اللأداة</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#"
+                >الملف الشخصي</a
+              >
+            </li>
+          </ul>
+          <p>
+            جميع الحقوق محفوظة لشركة لوك كامب
+            <i class="fa-regular fa-copyright"></i>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      let menu = document.getElementById("humbergerMenu");
+      let sidebar = document.getElementById("sidebarToggle");
+
+      menu.addEventListener("click", () => {
+        menu.classList.toggle("mb-2");
+        sidebar.classList.toggle("d-none");
+        sidebar.classList.toggle("fade-in");
+        sidebar.parentElement.classList.toggle("position-absolute");
+      });
+    </script>
+  </body>
+</html>

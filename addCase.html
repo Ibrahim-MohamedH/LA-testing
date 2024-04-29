@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lawyers/Accountants</title>
+    <!-- google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap 5.3.2 -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/bootstrap/css/bootstrap.rtl.min.css"
+    />
+    <!-- fontawesome 6.5.1 -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/fontawesome/css/all.min.css"
+    />
+    <!-- main cc -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler me-3 bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand me-auto" href="index.html">
+            <img src="../assets/images/Logo.png" alt="LoremLogo" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item text-reset">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >الصفحة الرئيسية</a
+                >
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="news.html">الأخبار</a>
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="laws.html">القوانين</a>
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="viewAllJobs.html">الوظائف</a>
+              </li>
+              <li class="nav-item text-reset dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  العمل الحر
+                </a>
+                <ul class="dropdown-menu linkMenu py-0">
+                  <li>
+                    <a class="dropdown-item" href="cases.html"
+                      >الحالات الخاصة بك</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="addCase.html">إضافة حالة</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="freelance.html"
+                      >البحث عن المستقلين</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <ul
+            class="navbar-nav ms-auto flex-row mb-2 mb-lg-0 align-items-center flex-nowrap"
+          >
+            <li class="nav-item dropdown position-relative">
+              <a
+                class="text-decoration-none text-reset d-flex align-items-center position-relative"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><i class="fa-regular fa-bell fs-3 me-2"></i>
+                <span
+                  class="badge rounded-pill text-bg-warning position-absolute top-50 translate-middle border border-1 bc-white"
+                  >0</span
+                >
+              </a>
+              <ul
+                class="dropdown-menu profileMenu py-0 position-absolute end-0"
+              >
+                <li class="py-2">
+                  <a class="dropdown-item" href="./createCV.html"
+                    >انشاء سيرة ذاتية</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./pricePlan.html"
+                    >خطط التسعير</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./helpCenter.html"
+                    >مركز المساعدة</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./favourites.html">المفضلات</a>
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./accountSettings.html"
+                    >إعدادات الحساب</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./index.html">تسجيل الخروج</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown position-relative">
+              <a
+                class="text-decoration-none text-reset dropdown-toggle d-flex align-items-center position-relative"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="../assets/images/loremProfile-1.png"
+                  width="40"
+                  class="rounded-circle"
+                  alt=""
+                />
+                <div>
+                  <span class="d-none d-md-block ps-2">محمد الحسيني</span>
+                  <span class="d-none d-md-block ps-2"
+                    >mo_elhosiny@mail.com</span
+                  >
+                </div>
+              </a>
+              <ul
+                class="dropdown-menu profileMenu py-0 position-absolute end-0"
+              >
+                <li class="exclude">
+                  <a href="./profile.html" class="dropdown-item px-1">
+                    <img
+                      src="../assets/images/loremProfile-1.png"
+                      width="40"
+                      class="rounded-circle"
+                      alt=""
+                    />
+                    <div class="d-inline-block">
+                      <span class="ps-2 d-block">محمد الحسيني</span>
+                      <span class="ps-2 d-block">mo_elhosiny@mail.com</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./createCV.html"
+                    >انشاء سيرة ذاتية</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./pricePlan.html"
+                    >خطط التسعير</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./helpCenter.html"
+                    >مركز المساعدة</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./favourites.html">المفضلات</a>
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./accountSettings.html"
+                    >إعدادات الحساب</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./index.html">تسجيل الخروج</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="addCaseHero" class="py-5">
+        <div class="container c-white">
+          <div class="row mb-3">
+            <div class="col-sm-6 order-sm-1 order-2">
+              <h4>إضافة حالة</h4>
+            </div>
+            <div class="col-sm-6 text-end order-sm-2 order-1 mb-sm-0 mb-2">
+              <button class="btn bg-blue c-white b-radius">
+                <i class="fa-solid fa-circle-info"></i> كيف تضيف حالتك
+              </button>
+            </div>
+          </div>
+          <p>
+            تستطيع إنجاز حالتك بالشكل الذي تريده من خلال elitse، أدخل تفاصيل
+            حالتك والميزانية والمدة المتوقعة ليتم مراجعته ونشره، بعد ذلك سيظهر
+            للمستقلين في صفحة الحالات ويقدموا عروضهم عليه لتختار العرض الأنسب لك
+            ويبدأ المستقل بتنفيذ حالتك.
+          </p>
+          <h4>موقع elite يضمن حقوقك</h4>
+          <p>
+            تستطيع إنجاز حالتك بالشكل الذي تريده من خلال elitse، أدخل تفاصيل
+            حالتك والميزانية والمدة المتوقعة ليتم مراجعته ونشره، بعد ذلك سيظهر
+            للمستقلين في صفحة الحالات ويقدموا عروضهم عليه لتختار العرض الأنسب لك
+            ويبدأ المستقل بتنفيذ حالتك.
+          </p>
+        </div>
+      </section>
+      <section id="caseDetails" class="py-5">
+        <div class="container">
+          <h2 class="fw-semibold mb-4">بيانات الحاله</h2>
+          <div class="card bc-st2 b-shadow b-radius">
+            <h5 class="mb-0 px-3">
+              <span class="py-3 d-inline-block">خبرة العمل</span>
+            </h5>
+            <hr class="border bc-blue border-3 opacity-100 my-0" />
+            <div class="container p-sm-4 p-2">
+              <div class="row">
+                <div class="fw-semibold mb-3">
+                  اظهار بيانات الحالة للعامة
+                  <label class="toggle-switch">
+                    <input type="checkbox" checked />
+                    <div class="toggle-switch-background">
+                      <div class="toggle-switch-handle"></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                  <label for="freelancerType" class="form-label"
+                    >نوع المستقل*</label
+                  >
+                  <select
+                    name="freelancerType"
+                    id="freelancerType"
+                    class="form-select form-select-lg bc-st2 b-h-radius"
+                  >
+                    <option value="lawyer">محامي</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                  <label for="caseTitle" class="form-label"
+                    >عنوان الحالة*</label
+                  >
+                  <input
+                    type="text"
+                    name="caseTitle"
+                    id="caseTitle"
+                    class="form-control form-control-lg bc-st2 b-h-radius"
+                    placeholder="عنوان الحالة"
+                  />
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                  <label for="country" class="form-label">الدولة*</label>
+                  <select
+                    name="country"
+                    id="country"
+                    class="form-select form-select-lg bc-st2 b-h-radius"
+                  >
+                    <option value="egy">مصر</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                  <label for="town" class="form-label">المنطقة*</label>
+                  <select
+                    name="town"
+                    id="town"
+                    class="form-select form-select-lg bc-st2 b-h-radius"
+                  >
+                    <option value="giza">الجيزة</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                  <label for="specialization" class="form-label">التخصص*</label>
+                  <select
+                    name="specialization"
+                    id="specialization"
+                    class="form-select form-select-lg bc-st2 b-h-radius"
+                  >
+                    <option value="any">القانون المدني</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                  <label for="estBudget" class="form-label"
+                    >الميزانية المقترحة*</label
+                  >
+                  <select
+                    name="estBudget"
+                    id="estBudget"
+                    class="form-select form-select-lg bc-st2 b-h-radius"
+                  >
+                    <option value="200">200</option>
+                  </select>
+                </div>
+                <div class="form-group col-12 mb-3">
+                  <div class="col-md-6 col-12 px-0">
+                    <label for="currency" class="form-label">العملة*</label>
+                    <select
+                      name="currency"
+                      id="currency"
+                      class="form-select form-select-lg bc-st2 b-h-radius"
+                    >
+                      <option value="USD">الدولار</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group col-12 mb-3">
+                  <label for="jobSkills" class="form-label"
+                    >كلمات افتتاحية</label
+                  >
+                  <br />
+                  <p class="mb-2">
+                    أدخل الكلمات الرئيسية بما في ذلك أي عناوين وظيفية أو تقنيات
+                    أو كلمات رئيسية ذات صلة يجب أن تكون لدى المرشح في سيرته
+                    الذاتية.
+                  </p>
+                  <ul class="tags ps-0 list-unstyled py-2">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="أضف كلمة..."
+                    />
+                  </ul>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                  <label for="caseDesc" class="form-label">وصف الحاله</label>
+                  <textarea
+                    class="form-control bc-st2 b-radius"
+                    placeholder="اكتب نبذة اضافيه"
+                    name="caseDesc"
+                    id="caseDesc"
+                    cols="30"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                  <label for="caseDesc" class="form-label"
+                    >المهارات المطلوبة</label
+                  >
+                  <textarea
+                    class="form-control bc-st2 b-radius"
+                    placeholder="المهارات المطلوبة"
+                    name="caseDesc"
+                    id="caseDesc"
+                    cols="30"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                  <p class="form-label">صورة البطاقة*</p>
+                  <div class="input-group file-group">
+                    <label
+                      for="id"
+                      class="input-group-text bg-blue c-white bc-st2"
+                      >اختيار ملف</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-lg r-eradius bc-st2"
+                    />
+                  </div>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                  <p class="form-label">الملفات الخاصة بالحالة*</p>
+                  <div class="addCaseFiles">
+                    <div class="input-group file-group mb-2">
+                      <label
+                        for="caseFiles0"
+                        class="input-group-text bg-blue c-white bc-st2"
+                        >اختيار ملف</label
+                      >
+                      <input
+                        type="text"
+                        name="caseFiles[]"
+                        id="caseFiles0"
+                        class="form-control form-control-lg r-eradius bc-st2"
+                      />
+                    </div>
+                  </div>
+                  <!-- 
+                    - TODO:
+                      - repeat caseFiles Input
+                    -->
+                  <div class="text-end">
+                    <button class="btn bg-blue c-white">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-5">
+            <button class="btn bg-blue c-white px-5 b-radius me-sm-2 mb-2">
+              نشر الحاله
+            </button>
+            <a href="#" class="btn bc-blue c-blue px-5 b-radius mb-2"
+              >الغاء الحاله</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="howto" class="hidden">
+        <div class="layout py-5">
+          <div class="container col-lg-8 col-md-10 col-12 pt-5">
+            <div class="card border-0 rounded-0">
+              <h5 class="mb-0 px-3 overflow-auto">
+                <span class="py-3 d-inline-block">كيف تضيف حالتك</span>
+                <span
+                  class="c-white bg-blue float-end b-d-radius close btn mt-2"
+                >
+                  <i class="fa-solid fa-xmark"></i>
+                </span>
+              </h5>
+              <hr class="border bc-blue border-3 opacity-100 my-0" />
+              <div class="card-body p-4">
+                <iframe
+                  width="100%"
+                  height="400"
+                  class="border border-2 bc-blue b-radius"
+                  src="https://www.youtube.com/embed/owCqVRbZlbg?si=20WveOPvjxc2TAws"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="translatorPayment" class="hidden">
+        <div class="layout py-5">
+          <div class="container col-lg-8 col-md-10 col-12 py-5">
+            <div class="card bc-st2 b-radius b-shadow">
+              <h5 class="px-3 py-2 overflow-auto">
+                تفاصيل الدفع
+                <span
+                  class="c-white bg-blue float-end b-d-radius close btn mt-2"
+                >
+                  <i class="fa-solid fa-xmark"></i>
+                </span>
+              </h5>
+              <hr class="border bc-blue border-3 opacity-100 my-0" />
+              <div class="card-body">
+                <h4 class="mb-3">
+                  يرجي ادخال بيانات الدفع ليتم دفع مبلغ 10$ لارسال الوثيقة
+                  الخاصة بك للمترجم
+                </h4>
+                <ul
+                  class="nav nav-pills mb-3 justify-md-content-between"
+                  id="pills-tab"
+                  role="tablist"
+                >
+                  <li class="nav-item col-md-4 col-5 me-2" role="presentation">
+                    <button
+                      class="nav-link w-100 text-start active bc-st2 border b-shadow b-radius"
+                      id="card-payment-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#card-payment"
+                      type="button"
+                      role="tab"
+                      aria-controls="card-payment"
+                      aria-selected="true"
+                    >
+                      <span class="d-block"
+                        ><i class="fa-solid fa-credit-card"></i
+                      ></span>
+                      Card
+                    </button>
+                  </li>
+                  <li class="nav-item col-md-4 col-5" role="presentation">
+                    <button
+                      class="nav-link w-100 text-start bc-st2 b-shadow b-radius border"
+                      id="phone-payment-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#phone-payment"
+                      type="button"
+                      role="tab"
+                      aria-controls="phone-payment"
+                      aria-selected="false"
+                    >
+                      <span class="d-block">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                      </span>
+                      EPS
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div
+                    class="tab-pane fade show active py-3"
+                    id="card-payment"
+                    role="tabpanel"
+                    aria-labelledby="card-payment-tab"
+                    tabindex="0"
+                  >
+                    <form action="">
+                      <div class="row">
+                        <div class="form-group mb-3 col-12">
+                          <label for="c-country" class="form-label"
+                            >الدولة*</label
+                          >
+                          <select
+                            name="c-country"
+                            id="c-country"
+                            class="form-select form-select-lg bc-st2 b-radius"
+                          >
+                            <option value="egy">مصر</option>
+                          </select>
+                        </div>
+                        <div class="form-group mb-3 col-12">
+                          <label for="c-town" class="form-label"
+                            >المنطقة*</label
+                          >
+                          <select
+                            name="c-town"
+                            id="c-town"
+                            class="form-select form-select-lg bc-st2 b-radius"
+                          >
+                            <option value="egy">الجيزة</option>
+                          </select>
+                        </div>
+                        <div class="form-group mb-3 col-12">
+                          <label for="c-cardId" class="form-label"
+                            >رقم البطاقة*</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form-control-lg bc-st2 b-radius"
+                            name="c-cardId"
+                            id="c-cardId"
+                            placeholder=" 1233 1233 1233 1233"
+                          />
+                        </div>
+                        <div class="form-group mb-3 col-md-6 col-12">
+                          <label for="c-cardName" class="form-label"
+                            >اسم البطاقة*</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form-control-lg bc-st2 b-radius"
+                            id="c-cardName"
+                            name="c-cardName"
+                            placeholder="card name"
+                          />
+                        </div>
+                        <div class="form-group mb-3 col-md-6 col-12">
+                          <label for="cvv" class="form-label"
+                            >رمز تحقق البطاقة C.V.V*</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form-control-lg bc-st2 b-radius"
+                            id="cvv"
+                            name="cvv"
+                            placeholder="(123)/(1234)"
+                          />
+                        </div>
+                        <div class="form-group mb-3 col-12">
+                          <label for="zipCode" class="form-label"
+                            >الرمز البريدي*</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form-control-lg bc-st2 b-radius"
+                            id="zipCode"
+                            placeholder="الرمز البريدي"
+                          />
+                        </div>
+                        <div class="form-group col-12 mt-3">
+                          <button
+                            class="btn bg-blue c-white px-5 py-2 me-2 b-radius pay"
+                          >
+                            دفع
+                          </button>
+                          <button
+                            class="btn bg-white c-blue bc-blue px-5 py-2 b-radius close"
+                          >
+                            الغاء
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div
+                    class="tab-pane fade py-3"
+                    id="phone-payment"
+                    role="tabpanel"
+                    aria-labelledby="phone-payment-tab"
+                    tabindex="0"
+                  >
+                    <form action="">
+                      <div class="row">
+                        <div class="form-group mb-3 col-12">
+                          <label for="p-paymethod" class="form-label"
+                            >طريقة الدفع*</label
+                          >
+                          <select
+                            name="p-paymethod"
+                            id="p-paymethod"
+                            class="form-select form-select-lg bc-st2 b-radius"
+                          >
+                            <option value="vcash">فودافون كاش</option>
+                          </select>
+                        </div>
+                        <div class="form-group mb-3 col-12">
+                          <label for="p-country" class="form-label"
+                            >الدولة*</label
+                          >
+                          <select
+                            name="p-country"
+                            id="p-country"
+                            class="form-select form-select-lg bc-st2 b-radius"
+                          >
+                            <option value="egy">مصر</option>
+                          </select>
+                        </div>
+                        <div class="form-group mb-3 col-12">
+                          <label for="p-town" class="form-label"
+                            >المنطقة*</label
+                          >
+                          <select
+                            name="p-town"
+                            id="p-town"
+                            class="form-select form-select-lg bc-st2 b-radius"
+                          >
+                            <option value="egy">الجيزة</option>
+                          </select>
+                        </div>
+                        <div class="form-group mb-3 col-12">
+                          <label for="phoneNumber" class="form-label"
+                            >رقم الهاتف*</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form-control-lg bc-st2 b-radius"
+                            id="phoneNumber"
+                            name="phoneNumber"
+                            placeholder="0100 000 0000"
+                          />
+                        </div>
+                        <div class="form-group mb-3 col-12">
+                          <label for="password" class="form-label"
+                            >الرقم السري*</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control form-control-lg bc-st2 b-radius"
+                            id="password"
+                            name="password"
+                            placeholder="********"
+                          />
+                        </div>
+                        <div class="form-group mt-3 col-12">
+                          <button
+                            class="btn bg-blue c-white px-5 py-2 me-2 b-radius pay"
+                          >
+                            دفع
+                          </button>
+                          <button
+                            class="btn bg-white c-blue bc-blue px-5 py-2 b-radius close"
+                          >
+                            الغاء
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="position-fixed bg-blue c-white b-eradius successfully hidden">
+        <p class="mb-0 p-2 ps-5 pe-3">
+          تم إنشاء الحاله بنجاح. <i class="fa-solid fa-circle-check"></i>
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid py-4">
+        <div class="container text-center">
+          <a class="navbar-brand col-12" href="#">
+            <img src="../assets/images/Logo2.png" alt="LoremLogo" />
+          </a>
+          <ul class="d-flex flex-wrap justify-content-center">
+            <li class="p-2">
+              <a
+                class="text-decoration-none text-reset"
+                aria-current="page"
+                href="#"
+                >لوحة التحكم</a
+              >
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">الوظائف</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">الاخبار</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">تعليم</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">اللأداة</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#"
+                >الملف الشخصي</a
+              >
+            </li>
+          </ul>
+          <p>
+            جميع الحقوق محفوظة لشركة لوك كامب
+            <i class="fa-regular fa-copyright"></i>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

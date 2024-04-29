@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lawyers/Accountants</title>
+    <!-- google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap 5.3.2 -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/bootstrap/css/bootstrap.rtl.min.css"
+    />
+    <!-- fontawesome 6.5.1 -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/fontawesome/css/all.min.css"
+    />
+    <!-- main cc -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler me-3 bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand me-auto" href="index.html">
+            <img src="../assets/images/Logo.png" alt="LoremLogo" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item text-reset">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >الصفحة الرئيسية</a
+                >
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="news.html">الأخبار</a>
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="laws.html">القوانين</a>
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="viewAllJobs.html">الوظائف</a>
+              </li>
+              <li class="nav-item text-reset dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  العمل الحر
+                </a>
+                <ul class="dropdown-menu linkMenu py-0">
+                  <li>
+                    <a class="dropdown-item" href="cases.html"
+                      >الحالات الخاصة بك</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="addCase.html">إضافة حالة</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="freelance.html"
+                      >البحث عن المستقلين</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown position-relative">
+              <a
+                class="text-decoration-none text-reset dropdown-toggle d-flex align-items-center position-relative"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><i class="fa-regular fa-bell fs-3 me-2"></i>
+                <span
+                  class="badge rounded-pill text-bg-warning position-absolute top-50 translate-middle border border-1 bc-white"
+                  >0</span
+                >
+                <img
+                  src="../assets/images/loremProfile-1.png"
+                  width="40"
+                  class="rounded-circle"
+                  alt=""
+                />
+                <div>
+                  <span class="d-none d-md-block ps-2">محمد الحسيني</span>
+                  <span class="d-none d-md-block ps-2"
+                    >mo_elhosiny@mail.com</span
+                  >
+                </div>
+              </a>
+              <ul
+                class="dropdown-menu profileMenu py-0 position-absolute end-0"
+              >
+                <li class="exclude">
+                  <a href="./profile.html" class="dropdown-item px-1">
+                    <img
+                      src="../assets/images/loremProfile-1.png"
+                      width="40"
+                      class="rounded-circle"
+                      alt=""
+                    />
+                    <div class="d-inline-block">
+                      <span class="ps-2 d-block">محمد الحسيني</span>
+                      <span class="ps-2 d-block">mo_elhosiny@mail.com</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./createCV.html"
+                    >انشاء سيرة ذاتية</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./pricePlan.html"
+                    >خطط التسعير</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./helpCenter.html"
+                    >مركز المساعدة</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./favourites.html">المفضلات</a>
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./accountSettings.html"
+                    >إعدادات الحساب</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a class="dropdown-item" href="./index.html">تسجيل الخروج</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="newsHero" class="py-5">
+        <div class="container py-5">
+          <div class="row c-white align-items-center">
+            <div class="col-lg-3 col-md-4 mb-3">
+              <h2 class="text-center fs-1 fw-bold">عاجل</h2>
+            </div>
+            <div class="col-lg-9 col-md-8 border-start border-5 bc-white">
+              <h3 class="fs-2">تعديل قانون رقم 21 لسنة 1925</h3>
+              <p>
+                هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال
+                المعيار للنص الشكلي.هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل
+                وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم
+                إيبسوم ولايزال المعيار للنص الشكلي.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="newsNavs">
+        <nav class="nav justify-content-center py-2">
+          <a class="nav-link c-blue text-decoration-underline" href="#"
+            >قانون الجنايات
+          </a>
+          <a class="nav-link text-reset" href="#">قانون المدني </a>
+          <a class="nav-link text-reset" href="#">قانون الاسري </a>
+          <a class="nav-link text-reset" href="#">قانون الاسري </a>
+          <a class="nav-link text-reset" href="#">قانون المخدرات</a>
+          <a class="nav-link text-reset" href="#">قانون المخدرات</a>
+          <a class="nav-link text-reset" href="#">قانون التجاري </a>
+          <a class="nav-link text-reset" href="#">قانون العمل </a>
+          <a class="nav-link text-reset" href="#">قانون الدولي </a>
+          <a class="nav-link text-reset" href="#">قانون البحري </a>
+        </nav>
+        <hr class="border bc-blue border-3 opacity-100 my-0" />
+      </section>
+      <section id="newsMainImg" class="py-5">
+        <div class="container">
+          <img src="../assets/images/Mask group.png" alt="" class="img-fluid" />
+        </div>
+      </section>
+      <section id="newsDetails" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <h1 class="mb-5">تم بنجاح 23 حالة</h1>
+              <p class="mb-5">
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                التطبيق. <br />إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك
+                مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما
+                ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على
+                وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة
+                حقيقية لتصميم الموقع. <br />ومن هنا وجب على المصمم أن يضع نصوصا
+                مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى
+                أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع
+                الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.هذا النص يمكن أن يتم
+                تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم،
+                غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+              </p>
+              <p class="mb-5">
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                التطبيق. <br />إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك
+                مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما
+                ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على
+                وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة
+                حقيقية لتصميم الموقع. <br />ومن هنا وجب على المصمم أن يضع نصوصا
+                مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى
+                أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع
+                الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.هذا النص يمكن أن يتم
+                تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم،
+                غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+              </p>
+              <p class="mb-5">
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                التطبيق. <br />إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك
+                مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما
+                ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على
+                وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة
+                حقيقية لتصميم الموقع. <br />ومن هنا وجب على المصمم أن يضع نصوصا
+                مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى
+                أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع
+                الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.هذا النص يمكن أن يتم
+                تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم،
+                غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <h4 class="mb-3">أخبار موصي بها</h4>
+              <a
+                href="newsDetails.html"
+                class="text-reset text-decoration-none"
+              >
+                <div class="card bc-st2 b-shadow b-radius">
+                  <p class="p-3 mb-0 text-center">
+                    عدالة جنائية وشئون امنية > الاجراءات الجنائية
+                  </p>
+                  <hr class="border bc-blue border-3 opacity-100 my-0" />
+                  <img
+                    src="../assets/images/news-2.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">
+                      تعديل بعض أحكام قانون الإجراءات الجنائية بشأن استئناف
+                      الجنايات على درجتين
+                    </h5>
+                    <p class="card-text mb-0 text-end">
+                      <small class="text-secondary">١٢-١٠-٢٠٢٠</small>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="moreNews" class="py-5">
+        <div class="container">
+          <div class="col-12 border-start border-5 bc-blue ps-3">
+            <h2 class="fw-semibold py-3">أخبار ذات صلة</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-5">
+              <a
+                href="newsDetails.html"
+                class="text-reset text-decoration-none"
+              >
+                <div class="card bc-st2 b-shadow b-radius">
+                  <p class="p-3 mb-0 text-center">
+                    <span class="c-blue">القطاع: </span>عدالة جنائية وشئون امنية
+                    > الاجراءات الجنائية
+                  </p>
+                  <hr class="border bc-blue border-3 opacity-100 my-0" />
+                  <img
+                    src="../assets/images/news-2.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">
+                      تعديل بعض أحكام قانون الإجراءات الجنائية بشأن استئناف
+                      الجنايات على درجتين
+                    </h5>
+                    <p class="card-text mb-0 text-end">
+                      <small class="text-secondary">١٢-١٠-٢٠٢٠</small>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5">
+              <a
+                href="newsDetails.html"
+                class="text-reset text-decoration-none"
+              >
+                <div class="card bc-st2 b-shadow b-radius">
+                  <p class="p-3 mb-0 text-center">
+                    <span class="c-blue">القطاع: </span>عدالة جنائية وشئون امنية
+                    > الاجراءات الجنائية
+                  </p>
+                  <hr class="border bc-blue border-3 opacity-100 my-0" />
+                  <img
+                    src="../assets/images/news-3.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">
+                      تعديل بعض أحكام قانون الإجراءات الجنائية بشأن استئناف
+                      الجنايات على درجتين
+                    </h5>
+                    <p class="card-text mb-0 text-end">
+                      <small class="text-secondary">١٢-١٠-٢٠٢٠</small>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5">
+              <a
+                href="newsDetails.html"
+                class="text-reset text-decoration-none"
+              >
+                <div class="card bc-st2 b-shadow b-radius">
+                  <p class="p-3 mb-0 text-center">
+                    <span class="c-blue">القطاع: </span>عدالة جنائية وشئون امنية
+                    > الاجراءات الجنائية
+                  </p>
+                  <hr class="border bc-blue border-3 opacity-100 my-0" />
+                  <img
+                    src="../assets/images/news-4.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">
+                      تعديل بعض أحكام قانون الإجراءات الجنائية بشأن استئناف
+                      الجنايات على درجتين
+                    </h5>
+                    <p class="card-text mb-0 text-end">
+                      <small class="text-secondary">١٢-١٠-٢٠٢٠</small>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container-fluid py-4">
+        <div class="container text-center">
+          <a class="navbar-brand col-12" href="#">
+            <img src="../assets/images/Logo2.png" alt="LoremLogo" />
+          </a>
+          <ul class="d-flex flex-wrap justify-content-center">
+            <li class="p-2">
+              <a
+                class="text-decoration-none text-reset"
+                aria-current="page"
+                href="#"
+                >لوحة التحكم</a
+              >
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">الوظائف</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">الاخبار</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">تعليم</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">اللأداة</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#"
+                >الملف الشخصي</a
+              >
+            </li>
+          </ul>
+          <p>
+            جميع الحقوق محفوظة لشركة لوك كامب
+            <i class="fa-regular fa-copyright"></i>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
