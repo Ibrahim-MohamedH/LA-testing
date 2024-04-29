@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lawyers/Accountants</title>
+    <!-- google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap 5.3.2 -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/bootstrap/css/bootstrap.rtl.min.css"
+    />
+    <!-- fontawesome 6.5.1 -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/fontawesome/css/all.min.css"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/swiper/swiper-bundle.min.css"
+    />
+    <!-- main cc -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler me-3 bg-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand me-auto" href="index.html">
+            <img src="./assets/images/Logo.png" alt="LoremLogo" />
+          </a>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item text-reset">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >الصفحة الرئيسية</a
+                >
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="news.html">الأخبار</a>
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="laws.html">القوانين</a>
+              </li>
+              <li class="nav-item text-reset">
+                <a class="nav-link" href="viewAllJobs.html">الوظائف</a>
+              </li>
+              <li class="nav-item text-reset dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  العمل الحر
+                </a>
+                <ul class="dropdown-menu linkMenu py-0">
+                  <li>
+                    <a class="dropdown-item" href="cases.html"
+                      >الحالات الخاصة بك</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="addCase.html">إضافة حالة</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="freelance.html"
+                      >البحث عن المستقلين</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item d-none d-md-block">
+              <a href="register.html" class="btn c-blue bg-white px-2 me-2"
+                >إنشاء حساب</a
+              >
+              <a href="login.html" class="btn c-blue bg-white px-2"
+                >تسجيل ادخول</a
+              >
+            </li>
+            <li class="nav-item d-md-none d-block">
+              <a href="login.html" class="btn c-blue bg-white"
+                ><i class="fa-solid fa-arrow-right-to-bracket"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="HomeHero" class="py-5">
+        <div class="container py-5 mb-5">
+          <h2
+            class="fw-semibold c-white text-center mb-5 col-md-7 col-sm-10 col-12 mx-auto"
+          >
+            يمكنك العثو علي افضل المستقلين في أكثر من مجال لانجاز مهامك في اسرع
+            وقت وافضل تكلفة
+          </h2>
+          <div class="card b-radius bc-st2">
+            <div class="row p-3 align-items-center">
+              <h6 class="col-6 mb-0">البحث في السير الذاتية للمرشحين</h6>
+              <h6 class="col-6 text-end mb-0">
+                <button
+                  type="button"
+                  class="btn c-ti"
+                  data-bs-toggle="modal"
+                  data-bs-target="#searchTipsModal"
+                >
+                  نصائح لبحث أفضل <i class="fa-solid fa-circle-info"></i>
+                </button>
+              </h6>
+            </div>
+            <hr class="border bc-blue border-3 opacity-100 my-0" />
+            <div class="card-body">
+              <form action="">
+                <div class="input-group input-group-lg py-2">
+                  <input type="text" class="form-control bc-st2 b-sradius" />
+                  <button class="btn bc-st2 bg-blue c-white b-eradius">
+                    <i class="fa-solid fa-magnifying-glass"></i> بحث
+                  </button>
+                </div>
+              </form>
+              <h5>
+                اخر نتائج البحث:
+                <a href="" class="text-reset me-3">زياد عبدالعظيم</a>
+                <a href="" class="text-reset me-3">احمد سعيد</a>
+                <a href="" class="text-reset me-3">إبراهيم محمد</a>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- HomeHero Modal -->
+      <div
+        class="modal fade pt-5"
+        id="searchTipsModal"
+        tabindex="-1"
+        aria-labelledby="searchTipsModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog mx-auto border border-1 bc-st2 b-radius mt-5">
+          <div class="modal-content rounded-0 border-0">
+            <div class="modal-header border-0">
+              <h1 class="modal-title fs-5" id="searchTipsModalLabel">
+                البحث في السير الذاتية للمرشحين
+              </h1>
+              <button
+                type="button"
+                class="btn bg-blue c-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <hr class="border bc-blue border-3 opacity-100 my-0" />
+            <div class="modal-body">
+              <div class="mb-4">
+                <div class="input-group input-group-lg mb-3">
+                  <input
+                    type="text"
+                    class="form-control b-sradius border-end-0 bc-st2"
+                    aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default"
+                    placeholder="زياد عبد العظيم علي"
+                  />
+                  <button class="input-group-text btn bg-blue c-white b-radius">
+                    <i class="fa-solid fa-magnifying-glass"></i> بحث
+                  </button>
+                </div>
+                <h5>
+                  اخر نتائج البحث:
+                  <a href="" class="text-reset me-3">زياد عبدالعظيم</a>
+                  <a href="" class="text-reset me-3">احمد سعيد</a>
+                  <a href="" class="text-reset me-3">إبراهيم محمد</a>
+                </h5>
+              </div>
+              <p class="card-text fw-medium">نصائح لبحث أفضل</p>
+              <div class="row tips">
+                <div class="col-12 mb-2 border border-1 bc-st2 p-sm-4 p-2">
+                  <p>
+                    ضع كلمة أو عنوانًا بين علامتي الاقتباس (" ") لإظهار الملفات
+                    الشخصية التي تحتوي على نفس الكلمات بنفس ترتيب تلك الموجودة
+                    داخل علامتي الاقتباس فقط. مثال: "مدير المبيعات".
+                  </p>
+                </div>
+                <div class="col-12 mb-2 border border-1 bc-st2 p-sm-4 p-2">
+                  <p>
+                    استخدم أو للعثور على الملفات الشخصية التي قد تحتوي على كلمة
+                    واحدة من عدة كلمات. مثال: مدير التسويق أو مدير التسويق.
+                  </p>
+                </div>
+                <div class="col-12 mb-2 border border-1 bc-st2 p-sm-4 p-2">
+                  <p>
+                    ضع كلمة أو عنوانًا بين علامتي الاقتباس (" ") لإظهار الملفات
+                    الشخصية التي تحتوي على نفس الكلمات بنفس ترتيب تلك الموجودة
+                    داخل علامتي الاقتباس فقط. مثال: "مدير المبيعات".
+                  </p>
+                </div>
+                <div class="col-12 mb-2 border border-1 bc-st2 p-sm-4 p-2">
+                  <p>
+                    استخدم أو للعثور على الملفات الشخصية التي قد تحتوي على كلمة
+                    واحدة من عدة كلمات. مثال: مدير التسويق أو مدير التسويق.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of HomeHero Modal -->
+      <section id="HeroSub" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-5 col-12 mb-3">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="position-relative overflow-hidden text-center">
+                      <img
+                        src="./assets/images/hero-img1.png"
+                        alt="top-1"
+                        class="img-fluid"
+                      />
+                      <div
+                        class="position-absolute top-0 start-0 w-100 h-100 swiper-layer"
+                      >
+                        <div
+                          class="position-absolute bottom-0 start-0 w-100 pb-4 text-md-start ps-md-3"
+                        >
+                          <h2 class="fw-bold c-white">أفضل مدير للمشروعات</h2>
+                          <p>
+                            هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="position-relative overflow-hidden text-center">
+                      <img
+                        src="./assets/images/hero-img1.png"
+                        alt="top-1"
+                        class="img-fluid"
+                      />
+                      <div
+                        class="position-absolute top-0 start-0 w-100 h-100 swiper-layer"
+                      >
+                        <div
+                          class="position-absolute bottom-0 start-0 w-100 pb-4 text-md-start ps-md-3"
+                        >
+                          <h2 class="fw-bold c-white">أفضل مدير للمشروعات</h2>
+                          <p>
+                            هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="position-relative overflow-hidden text-center">
+                      <img
+                        src="./assets/images/hero-img1.png"
+                        alt="top-1"
+                        class="img-fluid"
+                      />
+                      <div
+                        class="position-absolute top-0 start-0 w-100 h-100 swiper-layer"
+                      >
+                        <div
+                          class="position-absolute bottom-0 start-0 w-100 pb-4 text-md-start ps-md-3"
+                        >
+                          <h2 class="fw-bold c-white">أفضل مدير للمشروعات</h2>
+                          <p>
+                            هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-7 col-12 bg-blue py-5 px-5 rounded-5">
+              <img
+                src="./assets/images/Logo.png"
+                alt=""
+                class="img-fluid mb-5"
+              />
+              <h2 class="display-1 fw-bold col-lg-6 col-12 mb-5 c-white">
+                اداة ادارة المشاريع
+              </h2>
+              <p class="c-white lh-lg mb-4">
+                هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس ويُستخدم في
+                صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص
+                الشكلي.هو ببساطة نص شكلي (بم المحتوى) ويُستخدم في صناعات المطابع
+                ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي.هو
+                ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس ويُستخدم في صناعات
+                المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص
+                الشكلي.هو ببساطة نص شكلي (بم المحتوى) ويُستخدم في صناعات المطابع
+                ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي.
+              </p>
+              <a href="#" class="btn bg-white c-blue px-4 b-radius"
+                >الاشتراك في اداة ادارة المشاريع</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="HomeNeeds" class="">
+        <div class="container-fluid py-5">
+          <h2 class="display-5 fw-bold text-center mb-5">العمل الحر</h2>
+          <p
+            class="text-center col-lg-6 col-md-8 col-sm-10 col-12 mx-auto mb-5"
+          >
+            هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس ويُستخدم في صناعات
+            المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي.هو
+            ببساطة نص شكلي (بم المحتوى) ويُستخدم في صناعات المطابع ودور النشر.
+            كان لوريم إيبسوم ولايزال المعيار للنص الشكلي.
+          </p>
+          <!-- swiper here -->
+          <div class="container pb-5">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card bc-st2 b-radius b-shadow">
+                    <div class="card-body pt-1">
+                      <h2 class="text-end">
+                        <img
+                          src="./assets/images/quotes.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </h2>
+                      <h5 class="c-blue fw-bold">محاسبون من جميع الانحاء</h5>
+                      <div class="row align-items-center">
+                        <div class="col-6">
+                          <p class="card-text fw-bold">
+                            إرشادات مالية متخصصة مصممة لنجاحك
+                          </p>
+                        </div>
+                        <div class="col-6 text-center">
+                          <img
+                            src="./assets/images/freelancer-1.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <p class="card-text text-decoration-underline c-blue">
+                        <a href="#" class="text-reset"
+                          ><small>اضغط لعرض حالتك علي مئات المترجمين</small></a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card bc-st2 b-radius b-shadow">
+                    <div class="card-body pt-1">
+                      <h2 class="text-end">
+                        <img
+                          src="./assets/images/quotes.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </h2>
+                      <h5 class="c-blue fw-bold">محامون من جميع الانحاء</h5>
+                      <div class="row align-items-center">
+                        <div class="col-6">
+                          <p class="card-text fw-bold">
+                            في يدي المحامي يتجلى القانون
+                          </p>
+                        </div>
+                        <div class="col-6 text-center">
+                          <img
+                            src="./assets/images/freelancer-2.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <p class="card-text text-decoration-underline c-blue">
+                        <a href="#" class="text-reset"
+                          ><small>اضغط لعرض حالتك علي مئات المترجمين</small></a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card bc-st2 b-radius b-shadow">
+                    <div class="card-body pt-1">
+                      <h2 class="text-end">
+                        <img
+                          src="./assets/images/quotes.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </h2>
+                      <h5 class="c-blue fw-bold">مترجمون من جميع الانحاء</h5>
+                      <div class="row align-items-center">
+                        <div class="col-6">
+                          <p class="card-text fw-bold">
+                            كسر حواجز اللغة: بوابتك إلى التواصل العالمي
+                          </p>
+                        </div>
+                        <div class="col-6 text-center">
+                          <img
+                            src="./assets/images/freelancer-3.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <p class="card-text text-decoration-underline c-blue">
+                        <a href="#" class="text-reset"
+                          ><small>اضغط لعرض حالتك علي مئات المترجمين</small></a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card bc-st2 b-radius b-shadow">
+                    <div class="card-body pt-1">
+                      <h2 class="text-end">
+                        <img
+                          src="./assets/images/quotes.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </h2>
+                      <h5 class="c-blue fw-bold">محاسبون من جميع الانحاء</h5>
+                      <div class="row align-items-center">
+                        <div class="col-6">
+                          <p class="card-text fw-bold">
+                            إرشادات مالية متخصصة مصممة لنجاحك
+                          </p>
+                        </div>
+                        <div class="col-6 text-center">
+                          <img
+                            src="./assets/images/freelancer-1.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <p class="card-text text-decoration-underline c-blue">
+                        <a href="#" class="text-reset"
+                          ><small>اضغط لعرض حالتك علي مئات المترجمين</small></a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card bc-st2 b-radius b-shadow">
+                    <div class="card-body pt-1">
+                      <h2 class="text-end">
+                        <img
+                          src="./assets/images/quotes.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </h2>
+                      <h5 class="c-blue fw-bold">محامون من جميع الانحاء</h5>
+                      <div class="row align-items-center">
+                        <div class="col-6">
+                          <p class="card-text fw-bold">
+                            في يدي المحامي يتجلى القانون
+                          </p>
+                        </div>
+                        <div class="col-6 text-center">
+                          <img
+                            src="./assets/images/freelancer-2.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <p class="card-text text-decoration-underline c-blue">
+                        <a href="#" class="text-reset"
+                          ><small>اضغط لعرض حالتك علي مئات المترجمين</small></a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card bc-st2 b-radius b-shadow">
+                    <div class="card-body pt-1">
+                      <h2 class="text-end">
+                        <img
+                          src="./assets/images/quotes.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </h2>
+                      <h5 class="c-blue fw-bold">مترجمون من جميع الانحاء</h5>
+                      <div class="row align-items-center">
+                        <div class="col-6">
+                          <p class="card-text fw-bold">
+                            كسر حواجز اللغة: بوابتك إلى التواصل العالمي
+                          </p>
+                        </div>
+                        <div class="col-6 text-center">
+                          <img
+                            src="./assets/images/freelancer-3.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <p class="card-text text-decoration-underline c-blue">
+                        <a href="#" class="text-reset"
+                          ><small>اضغط لعرض حالتك علي مئات المترجمين</small></a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center py-3">
+            <a
+              href="./homepage/freelance.html"
+              class="btn bg-white c-blue px-5"
+            >
+              العمل الحر</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="HomeVideos" class="py-5">
+        <h2 class="display-5 fw-bold text-center mb-5">فيديوهات</h2>
+        <p class="text-center col-lg-6 col-md-8 col-sm-10 col-12 mx-auto mb-5">
+          هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس ويُستخدم في صناعات
+          المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي.هو
+          ببساطة نص شكلي (بم المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان
+          لوريم إيبسوم ولايزال المعيار للنص الشكلي.
+        </p>
+        <!-- Iframe -->
+        <iframe
+          width="100%"
+          height="500"
+          src="https://www.youtube.com/embed/-lTwp4Yu9u0?si=u229e98b8AaX5lBk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <!-- endof Iframe -->
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/-lTwp4Yu9u0?si=u229e98b8AaX5lBk"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <hr class="border bc-blue border-3 opacity-100 my-0" />
+                <div class="card-body">
+                  <div class="card-text">
+                    هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس ويُستخدم في
+                    صناعات المطابع ودور النشر
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/-lTwp4Yu9u0?si=u229e98b8AaX5lBk"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <hr class="border bc-blue border-3 opacity-100 my-0" />
+                <div class="card-body">
+                  <div class="card-text">
+                    هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس ويُستخدم في
+                    صناعات المطابع ودور النشر
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/-lTwp4Yu9u0?si=u229e98b8AaX5lBk"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <hr class="border bc-blue border-3 opacity-100 my-0" />
+                <div class="card-body">
+                  <div class="card-text">
+                    هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس ويُستخدم في
+                    صناعات المطابع ودور النشر
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/-lTwp4Yu9u0?si=u229e98b8AaX5lBk"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <hr class="border bc-blue border-3 opacity-100 my-0" />
+                <div class="card-body">
+                  <div class="card-text">
+                    هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس ويُستخدم في
+                    صناعات المطابع ودور النشر
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="freelanceOptions" class="py-5 bg-lin2 c-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-2 text-center">
+              <img src="./assets/images/hammer.png" alt="hammer" />
+              <p class="mt-1 mb-2 fs-4">أنجز أعمالك بسرعة وسهولة</p>
+              <p class="fs-6">
+                انشر مشروعك واترك مهمة تنفيذه لأفضل المستقلين المحترفين
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2 text-center">
+              <img src="./assets/images/computer.png" alt="hammer" />
+              <p class="mt-1 mb-2 fs-4">وظّف أفضل المستقلين</p>
+              <p class="fs-6">
+                انشر مشروعك واترك مهمة تنفيذه لأفضل المستقلين المحترفين
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2 text-center">
+              <img src="./assets/images/agreement.png" alt="hammer" />
+              <p class="mt-1 mb-2 fs-4">غطي احتياجاتك من المهارات</p>
+              <p class="fs-6">
+                انشر مشروعك واترك مهمة تنفيذه لأفضل المستقلين المحترفين
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2 text-center">
+              <img src="./assets/images/jury.png" alt="hammer" />
+              <p class="mt-1 mb-2 fs-4">ادفع بأريحية وأمان</p>
+              <p class="fs-6">
+                انشر مشروعك واترك مهمة تنفيذه لأفضل المستقلين المحترفين
+              </p>
+            </div>
+            <div class="col-12 text-center">
+              <a
+                href="viewAllJobs.html"
+                class="btn px-5 b-radius py-2 bg-white c-blue"
+                >عرض الوظائف</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="HomeSearch" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mb-3 order-1">
+              <h2
+                class="display-6 fw-bold ps-4 border-start border-4 mb-5 bc-blue"
+              >
+                البحث في القوانين
+              </h2>
+              <p class="mb-5">
+                هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس ويُستخدم في
+                صناعات نص شكلي (بم المحتوى) ويُستخدم في صناعات المطابع ودور
+                النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي.
+              </p>
+              <p>
+                <a href="laws.html" class="btn bg-blue c-white px-5 py-2"
+                  ><span class="px-3">القوانين</span></a
+                >
+              </p>
+            </div>
+            <div class="col-lg-6 mb-3 order-2">
+              <img
+                src="./assets/images/homeLawyer.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-6 mb-3 order-lg-3 order-4">
+              <img
+                src="./assets/images/homeAccountant.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-6 mb-3 order-lg-4 order-3">
+              <h2
+                class="display-6 fw-bold ps-4 border-start border-4 mb-5 bc-blue"
+              >
+                البحث في المبادئ المحاسبة
+              </h2>
+              <p class="mb-5">
+                هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس ويُستخدم في
+                صناعات نص شكلي (بم المحتوى) ويُستخدم في صناعات المطابع ودور
+                النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي.
+              </p>
+              <p>
+                <a href="laws.html" class="btn bg-blue c-white px-5 py-2"
+                  >المبادئ المحاسبة</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="HomeHelp" class="py-5 bg-st2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 mb-md-0 mb-3">
+              <h2 class="fw-bold">نحن نساعدك مع محامٍ قانوني عالي الجودة</h2>
+            </div>
+            <div class="col-lg-9 col-md-8 ps-md-4 pt-2">
+              <p class="mb-5">
+                هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال
+                المعيار للنص الشكلي.
+              </p>
+              <a href="" class="btn bg-blue c-white px-5 py-2">أضافة حاله</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="HomeMeeting" class="py-5">
+        <div class="container">
+          <div class="text-center">
+            <img
+              src="./assets/images/zoom meeting logo.png"
+              alt=""
+              class="img-fluid mb-3"
+            />
+            <h2 class="mb-5">حجز مقابلة مع احد الموظفيين</h2>
+            <p class="fs-5 mb-5 col-lg-7 col-md-9 col-12 mx-auto">
+              هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس ويُستخدم في
+              صناعات نص شكلي (بم المحتوى) ويُستخدم في صناعات المطابع ودور النشر.
+              كان لوريم إيبسوم ولايزال المعيار للنص الشكلي.
+            </p>
+            <a class="btn bg-blue c-white px-5 py-3"
+              ><span class="px-5">حجز مقابلة</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="HomeComplains" class="py-5">
+        <div class="container">
+          <h2
+            class="display-6 fw-bold ps-4 c-white border-start border-4 mb-5 bc-blue"
+          >
+            البحث في القوانين
+          </h2>
+          <p class="c-white">
+            هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس ويُستخدم في صناعات
+            نص شكلي (بم المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان
+            لوريم إيبسوم ولايزال المعيار للنص الشكلي.
+          </p>
+          <form action="">
+            <div class="form-group mb-3">
+              <textarea
+                class="form-control b-t-radius bc-blue"
+                name="suggestBox"
+                cols="30"
+                rows="5"
+                placeholder="ادخل المقترح او الشكوي الخاص بك"
+              ></textarea>
+            </div>
+            <div class="form-group text-sm-start text-center">
+              <button
+                class="btn bg-blue bc-blue c-white b-radius px-5 py-3 me-sm-3 mb-sm-0 mb-2"
+              >
+                <span class="px-5">ارسال</span>
+              </button>
+              <a href="#" class="btn bc-white c-white py-3"
+                >عرض جميع المقترحات او الشكاوي</a
+              >
+            </div>
+          </form>
+        </div>
+      </section>
+      <section id="ads" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-6 bg-blue c-white p-3 order-lg-1 order-2 b-sradius"
+            >
+              <h5 class="fw-bold">خذ موقع الويب الخاص بك إلى المستوى التالي</h5>
+              <p class="mb-0">
+                <small>
+                  هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                  ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم
+                  ولايزال المعيار للنص الشكلي.
+                </small>
+              </p>
+            </div>
+            <div
+              class="col-lg-6 px-0 text-lg-start text-center order-lg-2 order-1"
+            >
+              <img
+                src="./assets/images/home1.png"
+                alt=""
+                class="img-fluid b-eradius"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container-fluid py-4">
+        <div class="container text-center">
+          <a class="navbar-brand col-12" href="#">
+            <img src="./assets/images/Logo2.png" alt="LoremLogo" />
+          </a>
+          <ul class="d-flex flex-wrap justify-content-center">
+            <li class="p-2">
+              <a
+                class="text-decoration-none text-reset"
+                aria-current="page"
+                href="#"
+                >لوحة التحكم</a
+              >
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">الوظائف</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">الاخبار</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">تعليم</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#">اللأداة</a>
+            </li>
+            <li class="p-2">
+              <a class="text-decoration-none text-reset" href="#"
+                >الملف الشخصي</a
+              >
+            </li>
+          </ul>
+          <p>
+            جميع الحقوق محفوظة لشركة لوك كامب
+            <i class="fa-regular fa-copyright"></i>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- bootstrap -->
+    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- swiper -->
+    <script src="./assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper("#HeroSub .swiper", {
+        loop: true,
+        spaceBetween: 15,
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      // =======================================================
+      var swiper = new Swiper("#HomeNeeds .swiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        autoplay: {
+          delay: 3000,
+        },
+        centeredSlides: true,
+        loop: true,
+        spaceBetween: -10,
+        slidesPerView: 3,
+        reverseDirection: false,
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 300,
+          modifier: 1.3,
+          slideShadows: false,
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

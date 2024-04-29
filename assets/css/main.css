@@ -1,0 +1,1369 @@
+:root {
+  /* linears */
+  --main-linear: linear-gradient(to right, #1d9bf0, #004d94);
+  --secondary-linear: linear-gradient(to right, #1d9bf0, #11598a);
+  /* colors */
+  --main-color: #1e2e45;
+  --blue: #1d9bf0;
+  --darker-blue: #2679bc;
+  --stroke-color2: #bfd8ff;
+  --bg: #f5f5f5;
+  --white: #ffffff;
+  --stroke: #e2e2e2;
+  --text-input: #595d62;
+  --danger: #d6493e;
+  --success: #238a58;
+  /* font-family */
+  --cairo: "Cairo", sans-serif;
+  /* border-radius */
+  --main-radius: 4px;
+  --double-radius: 8px;
+  --half-radius: 2px;
+}
+* {
+  font-family: var(--cairo);
+}
+
+/*---------------------------------- 
+#Shared
+----------------------------------*/
+/*---------------- 
+#refrences
+----------------*/
+/* color */
+.c-blue,
+.c-blue:hover {
+  color: var(--blue) !important;
+}
+.c-main,
+.c-main:hover {
+  color: var(--main-color) !important;
+}
+.c-success,
+.c-success:hover {
+  color: var(--success) !important;
+}
+.c-danger,
+.c-danger:hover {
+  color: var(--danger) !important;
+}
+.c-st2,
+.c-st2:hover {
+  color: var(--stroke-color2) !important;
+}
+.c-ti,
+.c-ti:hover {
+  color: var(--text-input) !important;
+}
+.c-white,
+.c-white:hover {
+  color: var(--white) !important;
+}
+
+/* background-color */
+.bg-linear {
+  background: var(--main-linear) !important;
+}
+.bg-blue {
+  background-color: var(--blue) !important;
+}
+.bg-d-blue {
+  background-color: var(--darker-blue) !important;
+}
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+.bg-st2 {
+  background-color: var(--stroke-color2) !important;
+}
+.bg-st {
+  background-color: var(--stroke) !important;
+}
+.bg-white {
+  background-color: var(--white) !important;
+}
+.bg-lin2 {
+  background: var(--secondary-linear);
+}
+.bg-bg {
+  background: var(--bg);
+}
+/* border-color */
+.bc-blue {
+  border-color: var(--blue) !important;
+}
+.bc-success {
+  border-color: var(--success) !important;
+}
+.bc-main {
+  border-color: var(--main-color) !important;
+}
+.bc-danger {
+  border-color: var(--danger) !important;
+}
+.bc-st2 {
+  border-color: var(--stroke-color2) !important;
+}
+.bc-st {
+  border-color: var(--stroke) !important;
+}
+.bc-it {
+  border-color: var(--text-input) !important;
+}
+.bc-white {
+  border-color: var(--white) !important;
+}
+/* border-radius */
+.b-radius {
+  border-radius: var(--main-radius) !important;
+}
+.b-sradius {
+  border-top-right-radius: var(--main-radius) !important;
+  border-bottom-right-radius: var(--main-radius) !important;
+}
+.b-eradius {
+  border-top-left-radius: var(--main-radius) !important;
+  border-bottom-left-radius: var(--main-radius) !important;
+}
+.b-h-radius {
+  border-radius: var(--half-radius) !important;
+}
+.b-d-radius {
+  border-radius: var(--double-radius) !important;
+}
+.b-t-radius {
+  border-radius: calc(var(--double-radius) * 2) !important;
+}
+/* General */
+.b-shadow {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+/* =============================================== */
+/* =============================================== */
+#searchTips .layout {
+  background-color: rgba(29, 155, 240, 0.4);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 98745612346897;
+  overflow-y: scroll;
+}
+#searchTips .layout::-webkit-scrollbar {
+  display: none;
+}
+#searchTips .tips {
+  overflow: auto;
+  max-height: 250px;
+}
+#searchTips .tips::-webkit-scrollbar {
+  width: 10px;
+}
+#searchTips .tips::-webkit-scrollbar-track {
+  background: var(--white);
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+  /* padding: 2px; */
+}
+#searchTips .tips::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 4px;
+}
+/* =============================================== */
+/* =============================================== */
+/* remove "choose file" label from file input */
+.file-group input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+.form-group label {
+  transition: background-color 0.3s ease;
+}
+.multi input[type="checkbox"] + label:hover,
+.form-group input[type="radio"] + label:hover {
+  cursor: pointer;
+  background-color: var(--stroke-color2);
+}
+.multi input[type="checkbox"]:checked + label:hover,
+.form-group input[type="radio"]:checked + label:hover,
+.form-group input:checked + label {
+  background-color: var(--blue);
+  color: var(--white);
+}
+/*---------------- 
+#navbar
+----------------*/
+header {
+  background: var(--main-linear);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+header nav {
+  background: url(../images/Shape\ 1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+header nav,
+header nav a.nav-link {
+  color: var(--white);
+}
+
+header nav .linkMenu {
+  border-top: 6px solid var(--blue);
+}
+header nav .linkMenu li {
+  border-top: 2px solid var(--blue);
+}
+header nav .profileMenu li {
+  border-bottom: 2px solid var(--blue);
+}
+header nav .profileMenu li.exclude {
+  border-bottom-width: 6px;
+}
+
+/*---------------- 
+#footer
+----------------*/
+footer {
+  background: var(--main-linear);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+}
+footer .container-fluid {
+  background: url(../images/Shape\ 1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+footer .container-fluid ul {
+  list-style-type: none;
+}
+/*---------------------------------- 
+#dashboard page
+----------------------------------*/
+/*---------------- 
+#dashboard-top
+--------------*/
+#dashboard-top {
+  background: url(../images/dashboard-bg.png);
+}
+#dashboard-top h1 {
+  color: var(--white);
+}
+#dashboard-top a.btn {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: var(--main-radius);
+}
+
+/*---------------- 
+#addedJobs
+--------------*/
+
+#addedJobs .card {
+  border-color: var(--stroke-color2) !important;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: var(--main-radius);
+}
+#addedJobs .row .card {
+  border-radius: calc(var(--main-radius) * 2);
+}
+#addedJobs .card a.btn {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: var(--main-radius);
+}
+/*---------------- 
+#dashBAppAct
+--------------*/
+#dashBAppAct .card {
+  border-color: var(--stroke-color2) !important;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: var(--main-radius);
+}
+#dashBAppAct .row .card {
+  border-radius: calc(var(--main-radius) * 2);
+}
+
+/*---------------------------------- 
+#ManagePosts page
+----------------------------------*/
+/*---------------- 
+#managePosts-top
+--------------*/
+#managePosts-top a.btn {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: var(--main-radius);
+}
+/*---------------- 
+#jobs
+--------------*/
+#jobs .card button.nav-link {
+  color: black;
+}
+#jobs .card button.nav-link.active {
+  background: url(../images/btn-header.png) no-repeat;
+  background-size: 100% 100%;
+  color: var(--white);
+}
+
+/*---------------------------------- 
+#addJob page
+----------------------------------*/
+/*---------------- 
+#addJob
+--------------*/
+#addJob label {
+  transition: background-color 0.3s ease;
+}
+#addJob label:hover {
+  cursor: pointer;
+  background-color: var(--stroke-color2);
+}
+#addJob input:checked + label {
+  background-color: var(--blue);
+}
+#aboutJobPost ul {
+  list-style-type: none;
+  border: 2px solid var(--stroke-color2);
+  padding: 4px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: var(--main-radius);
+}
+#aboutJobPost ul li {
+  padding: 4px;
+  border: 1px solid var(--blue);
+  background-color: var(--stroke-color2);
+  border-radius: var(--half-radius);
+}
+#aboutJobPost ul li:hover {
+  cursor: pointer;
+}
+#aboutJobPost ul input {
+  border: none;
+  flex: 1;
+}
+#aboutJobPost ul input:focus {
+  box-shadow: none;
+}
+#aboutJobPost ul input:focus-visible {
+  outline: none;
+}
+/*---------------------------------- 
+#addJob2 page
+----------------------------------*/
+/*---------------- 
+#formRequest
+--------------*/
+#formRequest label {
+  transition: background-color 0.3s ease;
+}
+#formRequest input[type="radio"] + label:hover {
+  cursor: pointer;
+  background-color: var(--stroke-color2);
+}
+#formRequest input[type="radio"]:checked + label:hover,
+#formRequest input:checked + label {
+  background-color: var(--blue);
+}
+/*---------------- 
+#addQuestion
+--------------*/
+#addQuestion .multi {
+  max-height: calc(5 * 44px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#addQuestion .multi::-webkit-scrollbar {
+  width: 10px;
+}
+#addQuestion .multi::-webkit-scrollbar-track {
+  background: var(--white);
+  border: 2px solid var(--blue);
+  border-radius: 8px;
+  padding: 2px;
+}
+#addQuestion .multi::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 4px;
+}
+
+/* ========================= */
+/* switch btn */
+/* ========================= */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.toggle-switch input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-switch-background {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 2px #ccc;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-switch-handle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-switch::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  right: -35px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #aaa;
+  text-shadow: 1px 1px #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.toggle-switch input[type="checkbox"]:checked + .toggle-switch-handle {
+  transform: translateX(45px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 3px var(--blue);
+}
+
+.toggle-switch input[type="checkbox"]:checked + .toggle-switch-background {
+  background-color: var(--blue);
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-switch input[type="checkbox"]:checked + .toggle-switch:before {
+  content: "On";
+  color: var(--blue);
+  right: -15px;
+}
+
+.toggle-switch
+  input[type="checkbox"]:checked
+  + .toggle-switch-background
+  .toggle-switch-handle {
+  transform: translateX(20px);
+}
+
+/*---------------------------------- 
+#Profile page
+----------------------------------*/
+/*---------------- 
+#profileHero
+--------------*/
+#profileHero {
+  background-image: url(../images/dashboard-bg.png);
+  color: var(--white);
+}
+/*---------------- 
+#profileSkills
+--------------*/
+#profileSkills .skills li {
+  list-style-type: none;
+}
+#profileSkills .lang li {
+  list-style-type: square;
+}
+/*---------------------------------- 
+#search page
+----------------------------------*/
+/*---------------- 
+#searchHero
+--------------*/
+#searchHero {
+  background-image: url(../images/dashboard-bg.png);
+  max-height: 400px;
+  z-index: -100;
+}
+#searchHero .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+#searchHero .accordion-button:focus {
+  box-shadow: none;
+}
+/*---------------------------------- 
+#access page
+----------------------------------*/
+#access {
+  background: url(../images/access.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+#access .account {
+  min-height: 90vh;
+}
+#access input:checked + label.special {
+  background-color: transparent;
+  color: black;
+}
+#access span.position-absolute {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+#access span.position-absolute:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+#access input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+/*---------------------------------- 
+#Reset password page
+----------------------------------*/
+#resetPassword {
+  background: url(../images/resetPassword.png) no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+#resetPassword .account {
+  min-height: 90vh;
+}
+#resetPassword input:checked + label.special {
+  background-color: transparent;
+  color: black;
+}
+#resetPassword span.position-absolute {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+#resetPassword span.position-absolute:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+#resetPassword input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+/*---------------------------------- 
+#accountSettings page
+----------------------------------*/
+#settingsHero {
+  background-image: url(../images/dashboard-bg.png);
+  height: 200px;
+}
+#settingContent > .container {
+  margin-top: -150px;
+}
+#settingContent span.position-absolute {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+#settingContent span.position-absolute:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+/*---------------------------------- 
+#Company page
+----------------------------------*/
+#companyProfile {
+  background-image: url(../images/dashboard-bg.png);
+  height: 250px;
+  color: var(--white);
+}
+#companyContent > .container {
+  margin-top: -100px;
+}
+/*---------------------------------- 
+#EditCompany page
+----------------------------------*/
+#companyEdit {
+  background-image: url(../images/dashboard-bg.png);
+  height: 250px;
+  color: var(--white);
+}
+#companyEditContent > .container {
+  margin-top: -45px;
+}
+/*---------------------------------- 
+#ViewJob page
+----------------------------------*/
+#viewJobHero {
+  background-image: url(../images/dashboard-bg.png);
+  color: var(--white);
+}
+#viewJobApply .layout {
+  background-color: rgba(29, 155, 240, 0.4);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 98745612346897;
+  overflow-y: scroll;
+}
+#viewJobApply .layout::-webkit-scrollbar {
+  display: none;
+}
+#viewJobApply .layout .container-fluid i {
+  font-size: 32px;
+}
+#viewJobApply .layout .container-fluid i:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#viewJobApply .progress {
+  height: 0.75rem;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3) inset;
+}
+/*---------------------------------- 
+#PricingPlan page
+----------------------------------*/
+#pricingHero {
+  background-image: url(../images/priceplanHero.png);
+  background-position: right center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+#pricingFAQ .header {
+  position: relative;
+}
+#pricingFAQ .header:after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: var(--blue);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+#pricingFAQ .accordion-item {
+  border: 1px solid var(--stroke-color2);
+}
+#pricingFAQ .accordion-button {
+  background-color: transparent;
+  box-shadow: none;
+}
+/*---------------------------------- 
+#Freelance page
+----------------------------------*/
+#freelanceHero {
+  background: url(../images/freelancehero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#freelanceNeeds h1 {
+  position: relative;
+}
+#freelanceNeeds h1:after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: var(--blue);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+#freelanceAbout h2 {
+  position: relative;
+}
+#freelanceAbout h2:after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: var(--blue);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+#freelanceAbout .layoutFilter {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.5) 5%,
+    rgba(148, 187, 233, 0) 100%
+  );
+}
+/*---------------------------------- 
+#newsHero Page
+----------------------------------*/
+#newsHero {
+  background: url(../images/newsHero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*---------------------------------- 
+#news page
+----------------------------------*/
+#newsSummary h4,
+#newsSummary .col-md-6 p:not(:first-child) {
+  line-height: 1.8;
+}
+#newsSummary .col-md-6 p:not(:first-child) {
+  font-size: 18px;
+}
+#findingHelp .row .col-lg-6:first-child {
+  background: url(../images/news-6.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+/*---------------------------------- 
+#freelancer Profile page
+----------------------------------*/
+#freelancerHero {
+  background-image: url(../images/dashboard-bg.png);
+  /* max-height: 350px; */
+}
+#freelancerInfo {
+  margin-top: -150px;
+}
+#freelancerInfo2 {
+  margin-top: -250px;
+}
+/*---------------------------------- 
+#freelancer Edit Profile page
+----------------------------------*/
+#verificationInfo input[type="file"]::-webkit-file-upload-button,
+#freelancerEditInfo input[type="file"]::-webkit-file-upload-button,
+#freelancerEditEdu input[type="file"]::-webkit-file-upload-button,
+#freelancerEditExp input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+/*---------------------------------- 
+#freelancer verification page
+----------------------------------*/
+#verificationHero {
+  background-image: url(../images/dashboard-bg.png);
+  height: 330px;
+}
+#verificationInfo {
+  margin-top: -150px;
+}
+/*---------------------------------- 
+#credit page
+----------------------------------*/
+#wallet {
+  background: url(../images/priceplanHero.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+/*---------------------------------- 
+#laws page
+----------------------------------*/
+#lawDetailsHero,
+#lawHero {
+  background-image: url(../images/laws.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#lawHero .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+#lawHero .accordion-button:focus {
+  box-shadow: none;
+}
+#lawDetailsHero {
+  height: 280px;
+}
+#lawDetails {
+  margin-top: -150px;
+}
+#lawDetails .col-lg-4 > h4 {
+  color: var(--white);
+}
+/*---------------------------------- 
+#Home page
+----------------------------------*/
+#HomeHero {
+  background: url(../images/HomeHero.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
+}
+#HeroSub .swiper-layer {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 74%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+#HeroSub .swiper-slide .position-relative img {
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+}
+#HeroSub .swiper-button-next,
+#HeroSub .swiper-button-prev {
+  color: var(--white);
+}
+
+#HeroSub .swiper-pagination {
+  top: 5%;
+}
+
+#HeroSub .swiper-pagination-bullet {
+  background-color: transparent;
+  opacity: 1;
+  border: 1px solid white;
+  width: 10px;
+  height: 10px;
+}
+#HeroSub .swiper-pagination-bullet-active {
+  background-color: white;
+}
+.modal {
+  background-color: rgba(29, 155, 240, 0.4) !important;
+}
+.modal-dialog {
+  max-width: 80%;
+}
+
+.modal-body .tips {
+  overflow: auto;
+  max-height: 250px;
+}
+.modal-body .tips::-webkit-scrollbar {
+  width: 10px;
+}
+.modal-body .tips::-webkit-scrollbar-track {
+  background: var(--white);
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+  /* padding: 2px; */
+}
+.modal-body .tips::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 4px;
+}
+/* #HomeHero .position-absolute.w-100 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+#HomeHero p {
+  color: rgba(255, 255, 255, 0.7);
+} */
+#HomeNeeds .container-fluid {
+  background: url(../images/HomeNeedsBg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#HomeNeeds h2 {
+  position: relative;
+}
+#HomeNeeds h2:after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: var(--blue);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+#HomeNeeds .swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.7;
+}
+#HomeNeeds .swiper-slide:not(.swiper-slide-visible) {
+  opacity: 0;
+}
+#HomeVideos h2 {
+  position: relative;
+}
+#HomeVideos h2:after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: var(--blue);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+#HomeHelp .col-lg-9 {
+  border-right: 3px solid black;
+}
+#HomeComplains {
+  background: url(../images/complains.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#HomeMeeting .container {
+  background: url(../images/meeting.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+#pricingHero h2 {
+  position: relative;
+}
+#pricingHero h2:after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: var(--blue);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+/*---------------------------------- 
+#Favourites page
+----------------------------------*/
+.favs .nav-link,
+.favs .nav-link.active {
+  background-color: transparent;
+  color: black;
+  border-radius: 0px;
+}
+.favs .nav-item:has(> .nav-link.active) {
+  border-bottom: 3px solid var(--blue) !important;
+}
+/*---------------------------------- 
+#translatorProfile Page
+----------------------------------*/
+#sendDocument .layout {
+  background-color: rgba(29, 155, 240, 0.4);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 98745612346897;
+  overflow-y: scroll;
+}
+#sendDocument .layout::-webkit-scrollbar {
+  display: none;
+}
+#sendDocument .layout .container-fluid i {
+  font-size: 32px;
+}
+#sendDocument .layout .container-fluid i:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#sendDocument input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+/* ========================= */
+#translatorPayment button.nav-link {
+  background-color: transparent;
+  color: var(--blue);
+}
+#translatorPayment button.nav-link.active {
+  background-color: var(--blue);
+  color: var(--white);
+}
+#translatorPayment .layout {
+  background-color: rgba(29, 155, 240, 0.4);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 98745612346897;
+  overflow-y: scroll;
+}
+#translatorPayment .layout::-webkit-scrollbar {
+  display: none;
+}
+#translatorPayment .layout .container-fluid i {
+  font-size: 32px;
+}
+#translatorPayment .layout .container-fluid i:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#translatorPayment input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+/* ====================================================== */
+#reportComment .layout {
+  background-color: rgba(29, 155, 240, 0.4);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 98745612346897;
+  overflow-y: scroll;
+}
+#reportComment .layout::-webkit-scrollbar {
+  display: none;
+}
+/* ====================================================== */
+/*---------------------------------- 
+#applies Page
+----------------------------------*/
+#appliesHero {
+  background: url(../images/dashboard-bg.png);
+}
+#appliesHero select {
+  border: none;
+  background-color: transparent;
+  max-width: 350px;
+  font-size: 32px;
+  color: white;
+  background-image: url(../images/chevron.svg);
+}
+#appliesHero select:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+#appliesHero select::after {
+  color: white;
+}
+#applicants .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+#applicants .accordion-button:focus {
+  box-shadow: none;
+}
+/*---------------------------------- 
+#details payment page
+----------------------------------*/
+#payment button.nav-link {
+  background-color: transparent;
+  color: var(--blue);
+}
+#payment button.nav-link.active {
+  background-color: var(--blue);
+  color: var(--white);
+}
+#confirmation .layout {
+  background-color: rgba(29, 155, 240, 0.4);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 98745612346897;
+  overflow-y: scroll;
+}
+.successfully {
+  top: 10%;
+  transition: opacity 2s;
+}
+#confirmation .layout::-webkit-scrollbar {
+  display: none;
+}
+#confirmation .layout .container-fluid i {
+  font-size: 32px;
+}
+#confirmation .layout .container-fluid i:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#confirmation .progress {
+  height: 0.75rem;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3) inset;
+}
+/*---------------------------------- 
+#helpcenter page
+----------------------------------*/
+#helpCenter {
+  background-image: url(../images/dashboard-bg.png);
+}
+#helpResult .accordion-item {
+  border: 1px solid var(--stroke-color2);
+}
+#helpResult .accordion-button {
+  background-color: transparent;
+  box-shadow: none;
+}
+/*---------------------------------- 
+#cv page
+----------------------------------*/
+#cvHero {
+  background: url(../images/CV.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#cvSteps h2 {
+  position: relative;
+}
+
+#cvSteps h2:after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: var(--blue);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+/*---------------------------------- 
+#Create cv page
+----------------------------------*/
+#cvPersonalInfo {
+  background: url(../images/priceplanHero.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+#cvSkillsInfo ul {
+  list-style-type: none;
+  border: 2px solid var(--stroke-color2);
+  padding: 4px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: var(--main-radius);
+}
+#cvSkillsInfo ul li {
+  padding: 4px;
+  border: 1px solid var(--blue);
+  background-color: var(--stroke-color2);
+  border-radius: var(--half-radius);
+}
+#cvSkillsInfo ul li:hover {
+  cursor: pointer;
+}
+#cvSkillsInfo ul input {
+  border: none;
+  flex: 1;
+}
+#cvSkillsInfo ul input:focus {
+  box-shadow: none;
+}
+#cvSkillsInfo ul input:focus-visible {
+  outline: none;
+}
+/*---------------------------------- 
+#previewCV page
+----------------------------------*/
+#previewCVInfo {
+  background: url(../images/priceplanHero.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+/*---------------------------------- 
+#addCase page
+----------------------------------*/
+#addCaseHero {
+  background: url(../images/dashboard-bg.png);
+}
+
+ul.tags {
+  list-style-type: none;
+  border: 1px solid var(--stroke-color2);
+  padding: 4px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: var(--main-radius);
+}
+ul.tags li {
+  padding: 4px;
+  border: 1px solid var(--blue);
+  background-color: var(--stroke-color2);
+  border-radius: var(--half-radius);
+}
+ul.tags li:hover {
+  cursor: pointer;
+}
+ul.tags input {
+  border: none;
+  flex: 1;
+}
+ul.tags input:focus {
+  box-shadow: none;
+}
+ul.tags input:focus-visible {
+  outline: none;
+}
+
+#howto .layout {
+  background-color: rgba(29, 155, 240, 0.4);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 98745612346897;
+  overflow-y: scroll;
+}
+#howto .layout::-webkit-scrollbar {
+  display: none;
+}
+#howto .layout .container-fluid i {
+  font-size: 32px;
+}
+#howto .layout .container-fluid i:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+/*---------------------------------- 
+#Cases Page
+----------------------------------*/
+#casesHero {
+  background: url(../images/dashboard-bg.png);
+}
+#casesHero .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+#casesHero .accordion-button:focus {
+  box-shadow: none;
+}
+/*---------------------------------- 
+#lawyers page
+----------------------------------*/
+#lawyersHero {
+  background: url(../images/dashboard-bg.png);
+}
+#lawyersInfo {
+  margin-top: -150px;
+}
+#casePayment .layout,
+#caseInfo .layout {
+  background-color: rgba(29, 155, 240, 0.4);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 98745612346897;
+  overflow-y: scroll;
+}
+#casePayment .layout::-webkit-scrollbar,
+#caseInfo .layout::-webkit-scrollbar {
+  display: none;
+}
+#casePayment .layout .container-fluid i,
+#caseInfo .layout .container-fluid i {
+  font-size: 32px;
+}
+#casePayment .layout .container-fluid i:hover,
+#caseInfo .layout .container-fluid i:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#casePayment input[type="file"]::-webkit-file-upload-button,
+#caseInfo input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+#addToWallet button.nav-link,
+#casePayment button.nav-link,
+#caseInfo button.nav-link {
+  background-color: transparent;
+  color: var(--blue);
+}
+#addToWallet button.nav-link.active,
+#casePayment button.nav-link.active,
+#caseInfo button.nav-link.active {
+  background-color: var(--blue);
+  color: var(--white);
+}
+/*---------------------------------- 
+#notification Page
+----------------------------------*/
+#notificationHero {
+  background: url(../images/dashboard-bg.png);
+  min-height: 75vh;
+}
+#notificationHero .container > .card > .card-body {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+/* ================================================================= */
+#notificationHero .container > .card > .card-body::-webkit-scrollbar {
+  width: 5px;
+}
+
+#notificationHero .container > .card > .card-body::-webkit-scrollbar-track {
+  background: transparent;
+  border: 1px solid var(--blue);
+  border-radius: var(--double-radius);
+}
+
+#notificationHero .container > .card > .card-body::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: var(--double-radius);
+  opacity: 0.1;
+  transition: opacity 0.3s;
+}
+
+#notificationHero
+  .container
+  > .card
+  > .card-body:hover::-webkit-scrollbar-thumb {
+  opacity: 1;
+}
+/* ================================================================= */
+#notificationHero .unread {
+  position: relative;
+  background-color: rgba(191, 216, 255, 0.4);
+}
+#notificationHero .unread::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--blue);
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+/*---------------------------------- 
+#Media Query
+----------------------------------*/
+@media (max-width: 992px) {
+  #lawDetails .col-lg-4 > h4 {
+    color: black;
+  }
+}
+@media (max-width: 767px) {
+  .dropdown-menu[data-bs-popper] {
+    right: auto;
+  }
+  #searchHero {
+    max-height: none;
+  }
+  #HomeHelp .col-lg-9 {
+    border-right: none;
+    border-top: 3px solid black;
+  }
+  .modal-dialog {
+    max-width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  header nav .navbar-brand img {
+    width: 120px;
+  }
+  #companyContent > .container {
+    margin-top: -90px;
+  }
+  #companyEditContent > .container {
+    margin-top: -35px;
+  }
+  #appliesHero select {
+    font-size: 25px;
+  }
+}
